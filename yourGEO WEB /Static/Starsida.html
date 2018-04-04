@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="se-sv">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Your GEO</title>
+      <meta name="Amir, Mirella, Vilma, Viktoriya" content="Geografi">
+      <meta name="Your GEO" content="Geografi">
+      <meta name="GEO" content="Geografi,Lärande,Barn,Lärare">
+      <link rel="stylesheet" href="../view/Style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+     <!--Responsiv navigation-->
+    <div class="responsiv-bar">
+        <div class="logo">
+            <img class="LogoGEO" src="../IMG/Logo.png">
+        </div>
+        <div class="meny">
+            <h4>Meny</h4>
+        </div>
+    </div>
+    <!--Responsiv navigation Hitt-->
+    <nav>
+        <div class="logo">
+            <img class="LogoGEO" src="../IMG/Logo.png" alt="Logo webside">
+        </div>
+        <ul>
+            <li><a href="#" class="active">Hem</a></li>
+            <li><a href="#">Läs på</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Om oss</a></li>    
+        </ul>
+    </nav>
+    
+    <section class="sec1">
+        <div class="page-section">
+            <div class="sec1-inner">
+                <h1>Lär dig Geografi! </h1>
+                <p> YourGeo! är en fakta-baserad  sida för lärande som är användbar på flera plattform och används i klassrummet, Läs och svara på quiz! </p>
+                <img src="../IMG/kidsplaying.jpg" alt="kids playing">
+                
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h1>Välkommen</h1>
+        <p>It turns out the unusual way that kangaroos move completely throws off the car's animal detection system.
+
+        "We've noticed with the kangaroo being in mid-flight ... when it's in the air it actually looks like it's further away, then it lands and it looks closer," Volvo Australia's technical manager David Pickett said.
+
+        Because the cars use the ground as a reference point, they become confused by a hopping kangaroo, unable to determine how far away it is.
+
+        But Mr Pickett said it was even more complicated than that.
+
+        "First we have to start identifying the roo," he said.
+
+        "We identify what a human looks like by how a human walks, because it's not only the one type of human — you've got short people, tall people, people wearing coats. The same applies to a roo.
+
+        </p>
+    </section>
+    <section class="sec2"></section>
+    
+    <section class="sec3"></section>
+    
+    <!--Javascript för scroll animationen samt hamburgarmeny(black)-->
+    
+<script type="text/javascript">
+    $(window).on('scroll', function(){
+        if($(window). scrollTop()){
+            $('nav').addClass('black');
+        }
+        else
+            {
+               $('nav').removeClass('black'); 
+            }
+    })
+    
+    $(document).ready(function(){
+        $(".meny h4").click(function(){
+            $("nav ul").toggleClass("active")
+        })
+    })
+    
+</script>
+
+</body>
+</html>
