@@ -22,48 +22,65 @@
             <h4>Meny</h4>
         </div>
     </div>
-    <!--Responsiv navigation Hitt-->
+    <!-- Navigation & dropsdowns -->
     <nav>
         <div class="logo">
             <img class="LogoGEO" src="../IMG/Logo.png" alt="Logo webside">
         </div>
         <ul>
             <li><a href="#" class="active">Hem</a></li>
-            <li><a href="#">Läs på</a></li>
+              <div class="dropdown">
+                <button class="dropbtn">Läs På 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
             <li><a href="#">Quiz</a></li>
             <li><a href="#">Om oss</a></li>    
         </ul>
     </nav>
+    
+     <!-- Välkommnar användaren, introduktion för hemsidan HEADER -->
     
     <section class="sec1">
         <div class="page-section">
             <div class="sec1-inner">
                 <h1>Lär dig Geografi! </h1>
                 <p> YourGeo! är en fakta-baserad  sida för lärande som är användbar på flera plattform och används i klassrummet, Läs och svara på quiz! </p>
-                <img src="../IMG/kidsplaying.jpg" alt="kids playing">
+                <img class="barnbild" src="../IMG/kidsplaying.jpg" alt="kids playing">
+                <h4>För Barn </h4>
+                <h5>Lär dig fakta om länderna i Europa förstärka dina <br>kunskaper!</h5>
+                <button type="button" onclick="">Läs på</button>
+                <div class="Bild2">
+                <img class="Skolbild" alt="bild på skola" src="../IMG/skola.jpg">
+                <h4>För Skolor & Lärare </h4>
+                    <h5>Lär barnen geografi på ett pedagogisk sätt som är roligt för barn! </h5>
+                </div>
                 
             </div>
         </div>
     </section>
-    <section class="content">
-        <h1>Välkommen</h1>
-        <p>It turns out the unusual way that kangaroos move completely throws off the car's animal detection system.
-
-        "We've noticed with the kangaroo being in mid-flight ... when it's in the air it actually looks like it's further away, then it lands and it looks closer," Volvo Australia's technical manager David Pickett said.
-
-        Because the cars use the ground as a reference point, they become confused by a hopping kangaroo, unable to determine how far away it is.
-
-        But Mr Pickett said it was even more complicated than that.
-
-        "First we have to start identifying the roo," he said.
-
-        "We identify what a human looks like by how a human walks, because it's not only the one type of human — you've got short people, tall people, people wearing coats. The same applies to a roo.
-
-        </p>
-    </section>
-    <section class="sec2"></section>
     
-    <section class="sec3"></section>
+     <!-- Sektion: Beskrivning om Europas delar-->
+    
+    <section class="sec2">
+        <div class="page-center">
+            <h1>Europa</h1>
+            <p>Få information om alla länder och delar av Europa</p>
+            <img src="../IMG/europa.png">
+        </div>
+        <div class="page-left">
+        
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    
+    <footer class="sec3"></footer>
     
     <!--Javascript för scroll animationen samt hamburgarmeny(black)-->
     
