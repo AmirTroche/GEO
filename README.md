@@ -8,7 +8,7 @@
 
 3. Then select view to get the html code
 
-4. Choose any side to start with.
+4. Choose any site to start with.
 
 
 
