@@ -1,7 +1,7 @@
 from bottle import run, route, template, request
 import quiz
 
-""" Hämtar Main & Fakta sidorna"""
+""" Hamtar Main & Fakta sidorna"""
 
 @route('/')
 def main():
@@ -23,7 +23,7 @@ def get_west_facts():
 def get_south_facts():
     return template('south_facts')
 
-""" Hämtar Quiz"""
+""" Hamtar Quiz"""
 
 @route('/quiz_north')
 def get_quiz_north():
@@ -42,7 +42,7 @@ def get_quiz_west():
 def get_quiz_south():
     return template('quiz_south')
 
-""" Hämtar kontaktsidan"""
+""" Hamtar kontaktsidan"""
 
 @route('/contact')
 def contact():
