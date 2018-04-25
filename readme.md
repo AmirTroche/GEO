@@ -33,6 +33,7 @@ git clone https://github.com/AmirTroche/GEO.git
 ```bash
 py bottle_app.py
 ```
+   (If the command is not found, try to write python3 in front)     
 
 4. You should get a link that looks like this http//localhost:8080/
 
