@@ -1,4 +1,4 @@
-from bottle import run, route, template, request
+from bottle import run, route, template, request, static_file
 import quiz
 
 """ Hämtar Main & Fakta sidorna"""
@@ -53,5 +53,14 @@ def contact():
 def test():
     answer = request.query['answer']
     print(answer)
+
+@route("/static/<filename:path>")
+def server_static(filename):
+    '''Handles the routes to our static files
+
+    Returns:
+            file : the static file requested by URL
+    '''
+    return static_file(filename, root="static")
 
 run(host='localhost', port=8080)
