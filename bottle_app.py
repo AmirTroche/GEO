@@ -25,20 +25,20 @@ def get_south_facts():
 
 """ Hamtar Quiz"""
 
-@route('/quiz_north')
+@route('/north_quiz')
 def get_quiz_north():
     questions = quiz.get_quiz()
     return template('quiz_north', questions = questions)
 
-@route('/quiz_east')
+@route('/east_quiz')
 def get_quiz_east():
     return template('quiz_east')
 
-@route('/quiz_west')
+@route('/west_quiz')
 def get_quiz_west():
     return template('quiz_west')
 
-@route('/quiz_south')
+@route('/south_quiz')
 def get_quiz_south():
     return template('quiz_south')
 
