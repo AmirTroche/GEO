@@ -63,4 +63,5 @@ def server_static(filename):
     '''
     return static_file(filename, root="static")
 
+run(reloader=True)
 run(host='localhost', port=8080)
