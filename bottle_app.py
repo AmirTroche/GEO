@@ -26,9 +26,9 @@ def get_south_facts():
 """ Hamtar Quiz"""
 
 @route('/north_quiz')
-def get_north_quiz(db, cursor):
-    north=quiz.get_quiz_north(db, cursor)
-    return template('north_quiz',north=north)
+def get_north_quiz():
+    north=quiz.get_quiz_north()
+    return template('north_quiz',questions=north)
 
 @route('/east_quiz')
 def get_east_quiz():
@@ -63,5 +63,4 @@ def server_static(filename):
     '''
     return static_file(filename, root="static")
 
-run(reloader=True)
-run(host='localhost', port=8080)
+run(host='localhost', port=8050,reloader=True)
