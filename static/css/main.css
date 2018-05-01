@@ -17,7 +17,7 @@ body{
     margin-left: 14%;
     margin-right: auto;
     border-radius: 15px;
-    
+
 }
 
 
@@ -78,3 +78,30 @@ body{
 .fourth-box{padding:10px;background:#6CC;}
 
 
+<<<<<<< HEAD
+=======
+
+/*Collapse Facit*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+>>>>>>> 6f68375c4ca2ab0a9abd0556d4bea7f3d82b026c
