@@ -69,7 +69,15 @@ body{
 
  /* Kontakt sidan */
 .contactlist{
-    margin-bottom: 17%;
+    margin-top: 17%;
+    margin-bottom: 20%;
+}
+
+.footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .first-box{padding:10px;background:#9C0;}
