@@ -1,17 +1,23 @@
 import pymysql
 
 
-def get_quiz_north():
+def connectDB():
     # Ansluter till vår databas
-    db = pymysql.connect("localhost", "root", "", "quiz", cursorclass=pymysql.cursors.DictCursor)
+    db = pymysql.connect(host="localhost",
+                         user="root",
+                         passwd="",
+                         db="quiz",
+                         cursorclass=pymysql.cursors.DictCursor)
+    
     # Skapar en pekare mot databasen
     cursor = db.cursor()
-    # Skickar iväg en frågor för att hämta alla filmer från tabellen "movies"
-    cursor.execute("SELECT * FROM questions where Area = Norra Europa ")
-    # Tar emot svaret, sparar det i variabeln "movies
-    questions_north = cursor.fetchall()
-    # Stänger databasanslutningen
-    db.close()
-    # Skickar tillbaka filmerna
-    return questions_north
+    return db, cursor
+                      
 
+def get_quiz_north(db, cursor):
+    # Skickar iväg en fråga för att hämta alla fakta från tabellen "north facts"
+    sql = "SELECT * FROM questions where Area = Norra Europa"
+    cursor.execute(sql)
+    # Tar emot svaret, sparar det i variabeln "north"
+    north = cursor.fetchall()
+    return north
