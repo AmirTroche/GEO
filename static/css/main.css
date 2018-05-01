@@ -3,14 +3,12 @@ body{
     background: url(../Img/orangewall.jpg)
 }
 
-
-
-/* ---Main--- */
+/* ---Logo on navbar--- */
 .logo{
     width: 70px;
 }
 
-/* Header */
+/* ---Section 1 homepage--- */
 
 .carousel-inner img{
     width: 45%;
@@ -22,6 +20,15 @@ body{
     
 }
 
+
+
+.homepage{
+    margin-top: 8%;
+}
+
+/* ---Text on kid pic--- */
+
+
 .carousel-inner h1{
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
@@ -30,11 +37,26 @@ body{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/* ---Section 2 homepage--- */
+.section2{
+    margin-left: 10%;
+}
+
+/* ---Section 3 homepage--- */
+
+.eu-pic{
+    border-radius: 15px;
+}
+
+.row-info{
+    margin-top: 60px;
+}
 
 
-/* ---NORRA EUROPA--- */
 
- /* Rubrik Norra EU */
+/* ---Alla fakta sidor--- */
+
+ /* Rubrik */
 
 .display-2{
     margin-top: 20%;
@@ -45,9 +67,14 @@ body{
     height: 150px;
 }
 
- /* Kontakt */
+ /* Kontakt sidan */
+.contactlist{
+    margin-bottom: 17%;
+}
+
 .first-box{padding:10px;background:#9C0;}
 .second-box{padding:10px; background:#39F;}
 .third-box{padding:10px;background:#F66;}
 .fourth-box{padding:10px;background:#6CC;}
+
 
