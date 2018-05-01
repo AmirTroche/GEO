@@ -1,113 +1,454 @@
 <!DOCTYPE html>
 <html lang="se-sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Your GEO</title>
-        <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
-        <meta name="description" content="Geographic for kids">
-        <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
-        <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
-        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/static/css/main.css">
-    </head>
-    <body>
-        <header>
-            <!-- Navigation meny -->
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your GEO</title>
+    <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
+    <meta name="description" content="Geographic for kids">
+    <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
+    <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation meny -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="main">Hem <span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="main">Hem <span class="sr-only">(current)</span></a>
 
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Läs På
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="north_facts">Norra Europa</a>
-                                <a class="dropdown-item" href="west_facts">Västra Europa</a>
-                                <a class="dropdown-item" href="south_facts">Södra Europa</a>
-                                <a class="dropdown-item" href="east_facts">Östra Europa</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="north_facts">Norra Europa</a>
+                            <a class="dropdown-item" href="west_facts">Västra Europa</a>
+                            <a class="dropdown-item" href="south_facts">Södra Europa</a>
+                            <a class="dropdown-item" href="east_facts">Östra Europa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="north_quiz">Norra Europa</a>
-                                <a class="dropdown-item" href="west_quiz">Västra Europa</a>
-                                <a class="dropdown-item" href="south_quiz">Syd Europa</a>
-                                <a class="dropdown-item" href="east_quiz">Öst Europa</a>
-                            </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="north_quiz">Norra Europa</a>
+                            <a class="dropdown-item" href="west_quiz">Västra Europa</a>
+                            <a class="dropdown-item" href="south_quiz">Södra Europa</a>
+                            <a class="dropdown-item" href="east_quiz">Östra Europa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!----------------- Västra europa fakta container   ------------------->
+    <main role="main">
+        <div class="container marketing">
+            <!-- Västra Europa -->
+            <h1 class="display-2">Västra Europa</h1>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Irland <span class="text-muted"></span></h2>
+                    <ul>
+                        <li><strong>Huvudstad:</strong> Dublin</li>
+                        <li><strong>Officiellt språk:</strong> iriska, engelska</li>
+                        <li><strong>Statsskick:</strong> Republik</li>
+                        <li><strong>President:</strong> Micheal D. Higgins</li>
+                        <li><strong>Demografi:</strong> 5 000 000 (2017)</li>
+                        <li><strong>Yta:</strong> 70 182 km² (23 största land i Europa)</li>
+                        <li><strong>Topografi:</strong> <br>Högsta punkt: Carrauntoohill<br>Största sjö: Laugh Corrib<br>Längsta flod: Shannon</li>
+                        <li><strong>Geografi:</strong> Irland är mycket bördigt. Landets naturtillgångar är zink, koppar och kalksten. Den tredje största ön i Europa. Landet har i huvudsak en ganska flat topografi.
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="contact">Kontakt</a>
+                        <li><strong>Kända berg:</strong>Carrantuohill, Knocknarea, Brandon Mountain</li>
+                        <li><strong>Känt vatten:</strong>Lough Carrib, Lough Reem</li>
+                        <li><strong>Klimat:</strong>Landets klimat är milt och fuktigt (maritimt). Sommaren är den torraste årstiden och vintern den regnigaste. Det regnar ungefär 3000 mm per år i Irland.
                         </li>
                     </ul>
+                    <p class="lead">
+                    </p>
                 </div>
-            </nav>
-        </header>
+                <div class="col-md-5">
 
-        <!----------------- Västra europa fakta container   ------------------->
-        <main role="main">
-            <div class="container marketing">
-                <!-- Västra Europa -->
-                <h1 class="display-2">Västra Europa</h1>
-                <hr class="featurette-divider">
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Irland <span class="text-muted"></span></h2>
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/irlandflag.png" alt="irland flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Storbritannien <span class="text-muted"></span></h2>
+                    <p class="lead">
                         <ul>
-                            <li><strong>Huvudstad:</strong> Dublin</li>
-                            <li><strong>Officiellt språk:</strong> iriska, engelska</li>
-                            <li><strong>Statsskick:</strong> Republik</li>
-                            <li><strong>President:</strong> Micheal D. Higgins</li>
-                            <li><strong>Demografi:</strong> 5 000 000 (2017)</li>
-                            <li><strong>Yta:</strong> 70 182 km² (23 största land i Europa)</li>
-                            <li><strong>Topografi:</strong> <br>Högsta punkt: Carrauntoohill<br>Största sjö: Laugh Corrib<br>Längsta flod: Shannon</li>
-                            <li><strong>Geografi:</strong> Irland är mycket bördigt. Landets naturtillgångar är zink, koppar och kalksten. Den tredje största ön i Europa. Landet har i huvudsak en ganska flat topografi.
+                            <li><strong>Huvudstad:</strong> London</li>
+                            <li><strong>Officiellt språk:</strong> engelska</li>
+                            <li><strong>Statsskick:</strong> Konstitutionell monarki </li>
+                            <li><strong>Drottning:</strong> Elizabeth 2</li>
+                            <li><strong>Demografi:</strong> 65 110 000 (2015)</li>
+                            <li><strong>Yta:</strong> 243 610 km² (11 största land i Europa) </li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Ben Nevis
+                                <br>Största sjö: Laugh Neagh
+                                <br>Längsta flod: Severn
                             </li>
-                            <li><strong>Kända berg:</strong>Carrantuohill, Knocknarea, Brandon Mountain</li>
-                            <li><strong>Känt vatten:</strong>Lough Carrib, Lough Reem</li>
-                            <li><strong>Klimat:</strong>Landets klimat är milt och fuktigt (maritimt). Sommaren är den torraste årstiden och vintern den regnigaste. Det regnar ungefär 3000 mm per år i Irland.
+                            <li><strong>Geografi:</strong> Ön Storbritannien är den största av Brittiska öarna. Ön angränsar i söder mot Frankrike genom Engelska kanalen, i väst mot Irland genom Sankt Georgskanalen, Irländska sjön och Nordkanalen, samt i
+                                övriga väst och nord genom Atlanten och i övrigt av Nordsjön. Ön Storbritanniens areal är 229 850 kvadratkilometer varav: England 130 395 km2, Wales 20 779 km2 och Skottland 78 782 km2. Det finns ingen punkt i Storbritannien
+                                som är längre bort än 120 kilometer från havet.
                             </li>
+                            <li><strong>Kända berg:</strong> Ben Nevis, Snowdon, Helvellyn</li>
+                            <li><strong>Känt vatten:</strong> Themsen, Bristol Avon, Great Ouse, Nene </li>
+                            <li><strong>Klimat:</strong>Storbritannien har ett tempererat klimat med milda vintrar och svala somrar. Väderleken påverkas av Golfströmmen och den nordatlantiska lågtryckszonen, vilket ger blåsigt och ostadigt väder, stor molnighet
+                                och rikligt med nederbörd året om. De östra delarna av ön är i regel torrare än de västra och de södra delarna, som ligger närmare det europeiska fastlandet, är varmare än de norra. </li>
                         </ul>
-                        <p class="lead">
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-
-                        <img class="featurette-image img-fluid mx-auto" src="/static/img/islandflag.png" alt="irland flagga">
-
-                    </div>
                 </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/storbritanienflag.png" alt="storbritannien flagga">
 
-                <!--test RADERA EJ-->
-                                <a href="#demo" class="btn btn-primary" data-toggle="collapse">Simple collapsible</a>
-                                    <div id="demo" class="collapse">
-                                        Lorem
-                                    </div>
-                            <!-- /.container -->
-                            <!-- FOOTER -->
-                            <footer class="container">
-                                <p class="float-right"><a href="north_facts">Upp</a></p>
-                                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-                            </footer>
-                        </main>
-                        <!-- Bootstrap core JavaScript
-                            ================================================== -->
-                        <!-- Placed at the end of the document so the pages load faster -->
-                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-                        <script src="../js/bootstrap.min.js"></script>
-                    </body>
-                </html>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Tyskland <span class="text-muted"></span></h2>
+                    <ul>
+                        <li><strong>Huvudstad:</strong> Berlin</li>
+                        <li><strong>Officiellt språk:</strong> tyska</li>
+                        <li><strong>Statsskick:</strong> Förbundsrepublik</li>
+                        <li><strong>Förbundspresident:</strong> Frank-Walter Steinmeier</li>
+                        <li><strong>Demografi:</strong> 82 175 700</li>
+                        <li><strong>Yta:</strong> 357 112 km² (7 största land i Europa)</li>
+                        <li><strong>Topografi:</strong> <br>Högsta punkt: Zugspitze<br>Största sjö: Bodensjö<br>Längsta flod: Rhen</li>
+                        <li><strong>Geografi:</strong> Landskapet blir högre ju längre söderut man kommer. Norra Tyskland består av Nordtyska låglandet och ligger lägre än 200 meter över havet. Nordsjöns kust är flack och består av marskland, dyner och sandfält.
+                            Bredvid Rhen finns Rhenska skifferbergen med flera olika bergsmassiv.
+                        </li>
+                        <li><strong>Kända berg:</strong>Harz, Thüringer Wald, Alperna, Zugspitze
+                        </li>
+                        <li><strong>Känt vatten:</strong>Iller, Donau, Bodensjön, Oder, Müritz</li>
+                        <li><strong>Klimat:</strong>Klimatet är tempererat fuktigt klimat med små regionala skillnader, för det mesta kontinentalt med stora temperaturskillnader mellan sommar och vinter. I norr påverkas de mer av havets vindar och därav blir
+                            temperaturskillnaderna ganska små. Skillnaderna blir större ju söderut man kommer. Runt Rhendalen finner man det mildaste klimatet där temperaturen sommartid kan uppnå 40 grader. Nederbörden är ojämnt fördelad. En liten del
+                            runt den lågt belägna Bodensee har ett subtropiskt klimat.
+                        </li>
+                    </ul>
+                    <p class="lead">
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/tysklandflag.jpg" alt="tyskland flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Nederländerna <span class="text-muted"></span></h2>
+                    <p class="lead">
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Amsterdam (formell) Haag (administrativ)</li>
+                            <li><strong>Officiellt språk:</strong> nederländska</li>
+                            <li><strong>Statsskick:</strong> Konstitutionell monarki </li>
+                            <li><strong>Kung:</strong> Willem-Alexander</li>
+                            <li><strong>Demografi:</strong> 16 979 120 (2016)</li>
+                            <li><strong>Yta:</strong> 41 543 km² (31 största land i Europa) </li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Mount Scenery (i Nederlänska Antillerna). Vaalserberg (i det egentliga Nederländerna)
+                                <br>Största sjö: IJsselmeer
+                                <br>Längsta flod: Rhen
+                            </li>
+                            <li><strong>Geografi:</strong> Det mest utmärkande draget hos Nederländerna är det flacka landskapet. Ungefär häften av landet ligger mindre än en meter över havet och en fjärdedel ligger faktiskt under havsytans nivå. Stora delar
+                                av landet är gammal havsbotten.
+                            </li>
+                            <li><strong>Kända berg:</strong> Vaalserberg</li>
+                            <li><strong>Känt vatten:</strong> IJsselmeer, o Kralingen Lake, Hofvijver </li>
+                            <li><strong>Klimat:</strong> Klimatet kännetecknas av ett tempererat, fuktigt kustklimat med milda vintrar och svala somrar. I allmänhet blåser det från sydväst och snö faller ungefär 20 dagar om året.</li>
+                        </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/netherlandsflag.png" alt="nederländerna flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Frankrike <span class="text-muted"></span></h2>
+                    <ul>
+                        <li><strong>Huvudstad:</strong> Paris</li>
+                        <li><strong>Officiellt språk:</strong> franska</li>
+                        <li><strong>Statsskick:</strong> Semipresidentiell republik</li>
+                        <li><strong>President:</strong> Emmanuel Macron</li>
+                        <li><strong>Demografi:</strong> 66 990 826 (2017)</li>
+                        <li><strong>Yta:</strong> 643 801 km² (3 största land i Europa)</li>
+                        <li><strong>Topografi:</strong> <br>Högsta punkt: Mont Blanc<br>Största sjö: Genévesjön <br>Längsta flod: Loire</li>
+                        <li><strong>Geografi:</strong> Förutom moderlandet i Västeuropa består Frankrike av territorier i Nordamerika, Karibien, Sydamerika, Indiska oceanen, Stilla havet och Antarktis (anspråken på landområdet i Antarktis erkänns inte av
+                            de flesta länder i världen). Består av varierande slags av landskap, från kustslätter i norr och i väst vid Atlanten och Nordsjön till de stora bergskedjorna. Lutande slättland i norr och väster. Floderna rinner genom de svagt
+                            sluttande slättlanden och ger bördiga flodområden, vilket gör att landets ekonomiska och politiska medelpunkt hamnat i landets norra delar vilket kan ses som en starkt bidragande orsak till att Paris blivit landets centrum.
+                        </li>
+                        <li><strong>Kända berg:</strong> Pyrenéerna, Alperna, Mont Blanc, Centralmassivet och Vogeserna.
+                        </li>
+                        <li><strong>Känt vatten:</strong> Loire, Rhône, Seine, Garonne, Meuse, Rhen
+                        </li>
+                        <li><strong>Klimat:</strong>Norra Frankrike är svalt och fuktigt medan i söder råder det torr och hett medelhavsklimat. Mellan områdena Centralmassivet och Medelhavet råder de legendariska vindarna Mistral och Siroccon. Frankrike är,
+                            med undantag för Aplerna, förskonat från extrema klimatförhållanden.
+                        </li>
+                    </ul>
+                    <p class="lead">
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/frankrikeflag.png" alt="frankrike flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Belgien <span class="text-muted"></span></h2>
+                    <p class="lead">
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Bryssel</li>
+                            <li><strong>Officiellt språk:</strong> nederländska, franska, tyska</li>
+                            <li><strong>Statsskick:</strong> Federal parlamentarisk demokrati och konstitutionell monarki</li>
+                            <li><strong>Kung:</strong> Philippe</li>
+                            <li><strong>Demografi:</strong> 11 250 585 (2016)</li>
+                            <li><strong>Yta:</strong> 30 528 km² (34 största land i Europa) </li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Signal de Botrange
+                                <br>Största sjö: Lac De l´Eau d´Heure
+                                <br>Längsta flod: Maas
+                            </li>
+                            <li><strong>Geografi:</strong> Landet är i huvudsak ett slättland, som har kust mot Engelska kanalen. Det böljande låglandet i norr övergår västerut i Flanderns bördiga marskland som avgränsas av dyner mot havet. De centrala delarna
+                                är ett platåland som i sydväst höjer sig i Ardennernas skogsklädda berg.
+                            </li>
+                            <li><strong>Kända berg:</strong> Eienberg, Bois de Wérimont, La Belle Vue</li>
+                            <li><strong>Känt vatten:</strong> Maas, Schelde, Sambre, Leie </li>
+                            <li><strong>Klimat:</strong> Belgien har ett milt tempererat klimat där nederbörden är ca 600-1000 mm om året.</li>
+                        </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/belgiumflag.jpg" alt="belgien flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Luxemburg <span class="text-muted"></span></h2>
+                    <ul>
+                        <li><strong>Huvudstad:</strong> Luxemburg</li>
+                        <li><strong>Officiellt språk:</strong> luxemburgiska, franska, tyska</li>
+                        <li><strong>Statsskick:</strong> Konstitutionell monarki</li>
+                        <li><strong>Storhertig:</strong> Henri</li>
+                        <li><strong>Demografi:</strong> 590 667 (2017)</li>
+                        <li><strong>Yta:</strong> 2 586 km² (42 största land i Europa)</li>
+                        <li><strong>Topografi:</strong> <br>Högsta punkt: Kneiff<br>Största sjö: - <br>Längsta flod: -</li>
+                        <li><strong>Geografi:</strong> Luxemburg är ett av Europas och även världens minsta länder. Det ligger på 167:e plats på listan över världens största länder efter areal, och har en yta på ungefär 2 586 kvadratkilometer. Landet gränsar
+                            i väst till den belgiska provinsen Luxemburg, som är nästan dubbelt så stor som landet.
+                        </li>
+                        <li><strong>Kända berg:</strong> Kneiff
+                        </li>
+                        <li><strong>Känt vatten:</strong> Mosel, Our,Sauer
+                        </li>
+                        <li><strong>Klimat:</strong> Luxemburgs klimat är milt och regnigt, och dalgångarna längs floderna är lämpliga för vinodling. Området Ösling i norr är kallare och rikare på nederbörd än Gutland i söder.
+                        </li>
+                    </ul>
+                    <p class="lead">
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/luxemburg.png" alt="luxemburg flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Tjeckien <span class="text-muted"></span></h2>
+                    <p class="lead">
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Prag</li>
+                            <li><strong>Officiellt språk:</strong> tjeckiska</li>
+                            <li><strong>Statsskick:</strong> Parlamentarisk republik</li>
+                            <li><strong>President:</strong> Milos Zeman</li>
+                            <li><strong>Demografi:</strong> 10 327 000</li>
+                            <li><strong>Yta:</strong> 78 866 km² (21 största land i Europa) </li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Snezka
+                                <br>Största sjö: Lipno
+                                <br>Längsta flod: Vltava
+                            </li>
+                            <li><strong>Geografi:</strong> Tjeckien avgränsas till stora delar naturligt av bergskedjor. -BöhmiskMähriska Randbergen går längs gränsen mellan Tjeckiens stora delar Böhmen och Mähren. Högsta bergstoppen, 1 602 meter över havet,
+                                ligger i Krkonoše och heter Sněžka. Lägsta punkten, 115 meter över havet, ligger vid Elbes utlopp mot norr. Avgränsade av dessa bergskedjor ligger de böhmiska och mähriska högplatåerna. Tjeckien har inga naturliga sjöar
+                                av betydelse. De största fria vattenytorna utgörs av regleringsdammar i de stora floderna.
+                            </li>
+                            <li><strong>Kända berg:</strong> Ceský les, Sumava, Krusné, Krkonose
+                            </li>
+                            <li><strong>Känt vatten:</strong> Elbe, Ohre, Oder</li>
+                            <li><strong>Klimat:</strong> Landet har ett inlandsklimat med relativt varma somrar och ett kallt klimat, vintertid, mestadels med snö. De andra årstiderna är milda men ostadiga. Låglandet har torrare och varmare temperaturer medan
+                                det tenderar att vara regnigare längre västerut. </li>
+                        </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/tjeckienflag.png" alt="tjeckien flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Schweiz <span class="text-muted"></span></h2>
+                    <ul>
+                        <li><strong>Huvudstad:</strong> Bern</li>
+                        <li><strong>Officiellt språk:</strong> tyska, franska, italienska, rätoromanska</li>
+                        <li><strong>Statsskick:</strong> Förbundsrepublik</li>
+                        <li><strong>Förbundspresident:</strong> Doris Leuthard</li>
+                        <li><strong>Demografi:</strong> 8 417 700 (2016)</li>
+                        <li><strong>Yta:</strong> 41 277 km² (32 största land i Europa)</li>
+                        <li><strong>Topografi:</strong> <br>Högsta punkt: Dufourspitze (Monte Eosa)<br>Största sjö: Genévesjön <br>Längsta flod: Rhen</li>
+                        <li><strong>Geografi:</strong> Landet är en av europas mindre stater (något större än Skåne och Småland tillsammans) och saknar kust.
+                        </li>
+                        <li><strong>Kända berg:</strong> Alperna, Nordend, Dom
+                        </li>
+                        <li><strong>Känt vatten:</strong> Aare, Rhone, Rhen, Reuss
+                        </li>
+                        <li><strong>Klimat:</strong> Det schweiziska klimatet domineras av atlantvindar i väst, medelhavsvindar i söder, kontinentalvindar i öst och mellaneuropeiska lågtryck i norr. Under sommaren ligger medeltemperaturen mellan 18 och 20
+                            grader i dalarna och runt 10 grader på de högre höjderna. Sommartid brukar gränsen för minusgrader ligga kring 3 000 m ö.h.. De södra delarna av kantonen Ticino har i det närmaste medelhavsklimat.
+                        </li>
+                    </ul>
+                    <p class="lead">
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/schweizflag.jpg" alt="schweiz flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Leichtenstein <span class="text-muted"></span></h2>
+                    <p class="lead">
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Vaduz</li>
+                            <li><strong>Officiellt språk:</strong> tyska</li>
+                            <li><strong>Statsskick:</strong> Konstitutionell monarki</li>
+                            <li><strong>Furste:</strong> Hans-Adam 2</li>
+                            <li><strong>Demografi:</strong> 37 815 (2017)</li>
+                            <li><strong>Yta:</strong> 160 km² (46 största land i Europa) </li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Grauspitz
+                                <br>Största sjö: -
+                                <br>Längsta flod: Rhen
+                            </li>
+                            <li><strong>Geografi:</strong> Trots sin ringa storlek kan landet delas in i två topogragiskt olika områden: västaplina helvetiska skållan och den östalpina. Stora delar av bergområdena är täckta av så kallat flysch, nedbrytningsprodukter
+                                från den alpina veckningen.
+                            </li>
+                            <li><strong>Kända berg:</strong> -
+                            </li>
+                            <li><strong>Känt vatten:</strong> Samina, Rhen</li>
+                            <li><strong>Klimat:</strong> Trots det alpina läget är klimatet förhållandevis milt, tack vare föhnvinden som blåser söderifrån. Genomsnittstemperaturen ligger omkring fryspunkten vintertid och cirka 17 plusgrader sommartid. I
+                                den högre terrängen är temperaturen lägre, ofta med rikligt snöfall vintertid.</li>
+                        </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/leichtensteinflag.png" alt="leichtenstein flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Andorra <span class="text-muted"></span></h2>
+                    <ul>
+                        <li><strong>Huvudstad:</strong> Andorra la Vella</li>
+                        <li><strong>Officiellt språk:</strong> katalanska</li>
+                        <li><strong>Statsskick:</strong> Furstendöme</li>
+                        <li><strong>Samregerande:</strong> Emmanuel Macron & Joan Enric Vives i Sicília </li>
+                        <li><strong>Demografi:</strong> 85 580 (2015)</li>
+                        <li><strong>Yta:</strong> 468 km² (44 största land i Europa)</li>
+                        <li><strong>Topografi:</strong> <br>Högsta punkt: Coma Pedrosa<br>Största sjö: Juclar <br>Längsta flod: La Valira</li>
+                        <li><strong>Geografi:</strong> Andorra ligger i östra Pyrenéerna och består därför främst av ojämn bergsterräng. Den bergiga terrängen genomskärs av tre smala dalar, som i Y-form kombineras i Valira-floden, som vid Andorras lägsta
+                            punkt, 870 meter över havet, fortsätter in i Spanien. Med en yta på 468 km² är det ett av världens minsta länder.
+                        </li>
+                        <li><strong>Kända berg:</strong> Coma Pedrosa, Pic de Sanforns, Pic del Port Vell
+                        </li>
+                        <li><strong>Känt vatten:</strong> Juclar, La Valira, Riu Madriu
+                        </li>
+                        <li><strong>Klimat:</strong> Andorra har ett tempererat klimat, snarlikt med landets grannar, men dess högre altitud gör att snö är något vanligare under vintern, och att somrarna är något kyligare.
+                        </li>
+                    </ul>
+                    <p class="lead">
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/andorraflag.png" alt="andorra flagga">
+
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Monaco <span class="text-muted"></span></h2>
+                    <p class="lead">
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Monaco</li>
+                            <li><strong>Officiellt språk:</strong> franska</li>
+                            <li><strong>Statsskick:</strong> Konstitutionell monarki</li>
+                            <li><strong>Furste:</strong> Albert 2</li>
+                            <li><strong>Demografi:</strong> 37 550 (2016)</li>
+                            <li><strong>Yta:</strong> 2,02 km² (48 största land i Europa) </li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Mont Agel
+                                <br>Största sjö: -
+                                <br>Längsta flod: -
+                            </li>
+                            <li><strong>Geografi:</strong> Monaco det näst minsta självständiga landet i världen, efter Vatikanstaten. Det ligger vid Medelhavets kust, 18 km öst om Nice. Den högsta punkten i Monaco är Mont Agel som sträcker sig 163 m över
+                                havet. Landet har inga naturtillgångar. Monaco är indelat i fyra geografiska områden: Monaco-Ville, den gamla staden som ligger på en klippa som sträcker sig ut i havet; La Condamine, området som ligger längs med hamnen;
+                                Monte Carlo, där de flesta bostads- och semesterområdena ligger; och Fontvieille, ett nybyggt område som är vunnet ur
+                            </li>
+                            <li><strong>Kända berg:</strong> Mont Agel
+                            </li>
+                            <li><strong>Känt vatten:</strong> -</li>
+                            <li><strong>Klimat:</strong> Monaco har ett typiskt medelhavsklimat med varma somrar och milda vintrar. Somrarna är torra, och mest regn faller på hösten. På vintern blåser ibland en kall nordlig fallvind, mistralen, över Medelhavskusten
+                                och kan ge frost.</li>
+                        </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/img/monacoflag.jpg" alt="monaco flagga">
+
+                </div>
+            </div>
+            <!-- /.container -->
+            <!-- FOOTER -->
+            <footer class="container">
+                <p class="float-right"><a href="north_facts">Upp</a></p>
+                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </footer>
+    </main>
+    <!-- Bootstrap core JavaScript
+                ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
