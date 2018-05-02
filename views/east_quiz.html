@@ -29,7 +29,7 @@
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Läs På
                             </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -58,9 +58,10 @@
         </nav>
     </header>
 
+    <!----------------- Östra europa quiz container   ------------------->
     <main role="main">
         <div class="container marketing">
-            <h1 class="display-2">Västra Europa</h1>
+            <h1 class="display-2">Östra Europa</h1>
             <hr class="featurette-divider">
 
         <!--fråga-->
@@ -268,89 +269,81 @@
                     </div>
                 </div>
             </form>
-<!--lalalla-->
 
-
-
-
-
-<!--LALALLALALL-->
-
-
-
-            <!--Collapse: visar svar till varje fråga, FACIT-->
-                <!--<a href="#demo" class="btn btn-primary" data-toggle="collapse">FACIT</a>
-                    <div id="demo" class="collapse">
-                        LAND       RÄTT SVAR
-                        <strong>Ukraina:</strong> Jordbruk
-                        <strong>Polen:</strong> Warszawa
-                        <strong>Slovakien:</strong> Ca 5 miljoner
-                        <strong>Rumänien:</strong> Donau
-                        <strong>Moldavien:</strong> Grönsaker
-                        <strong>Vitryssland:</strong> Minsk
-                        <strong>Kosovo:</strong> Albanska
-                        <strong>Azerbajdzjan:</strong> Inlandsklimat
-                        <strong>Georgien:</strong> Svarta havet
-                    </div> -->
-
+<!--Collapse-funktion, Facit-->
                     <button class="collapsible">FACIT</button>
                     <div class="content">
-                      <p>LAND       RÄTT SVAR
+                      <p><strong>LAND.</strong> RÄTT SVAR
+                      <br>
                       <strong>Ukraina:</strong> Jordbruk
+                      <br>
                       <strong>Polen:</strong> Warszawa
+                      <br>
                       <strong>Slovakien:</strong> Ca 5 miljoner
+                      <br>
                       <strong>Rumänien:</strong> Donau
+                      <br>
                       <strong>Moldavien:</strong> Grönsaker
+                      <br>
                       <strong>Vitryssland:</strong> Minsk
+                      <br>
                       <strong>Kosovo:</strong> Albanska
+                      <br>
                       <strong>Azerbajdzjan:</strong> Inlandsklimat
+                      <br>
                       <strong>Georgien:</strong> Svarta havet</p>
                     </div>
 
 
-                    </div> <!--Container marketing-->
-                  </main>
+          </div> <!--Container marketing-->
+      </main>
+
+
+      <!--Länk till nästa quiz-sida-->
+          <p class="float-right"><a href="north_quiz">Norra quiz!</a></p>
+
+
+
+            <!-- /.container -->
+            <!-- FOOTER -->
+            <footer class="container">
+                <hr class="featurette-divider">
+                <p class="float-right"><a href="east_quiz">Upp</a></p>
+                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </footer>
+    </main>
 
 
 
 
 
-        <!--Länk till nästa quiz-sida-->
-        <!--    <p class="float-right"><a href="north_quiz">Norr-quiz!</a></p>-->
 
+    <!--JavaScript för Collapse-funktion-->
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-<!--Footer-->
-<hr class="featurette-divider">
-<footer class="container">
-    <p class="float-right"><a href="north_quiz">Upp</a></p>
-    <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-</footer>
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+      </script>
+    <!-- Bootstrap core JavaScript
+                            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
 
-
-<!--Script för Collapse-funktion-->
-    <!--<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-  </script>-->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script>
-      window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>-->
-
-    </body>
 </html>
