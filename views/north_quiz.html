@@ -68,8 +68,22 @@
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Island <span class="text-muted"></span></h2>
-                <p>Vad heter den kända vulkanen?</p>
-
+                
+					<form>
+						% for i in questions:
+						<div class="col-3">
+							<h5 class="title">{{ question['question'] }}</h5>
+						</div>
+						% end		
+					</form>
+			</div>
+		</div>
+					
+				
+				
+				
+				
+				
                 <div class="three_radios">
                   <div class="radio">
                     <label><input type="radio" name="optradio">Hekla</label>

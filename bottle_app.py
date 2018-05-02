@@ -26,9 +26,9 @@ def get_south_facts():
 """ Hamtar Quiz"""
 
 @route('/north_quiz')
-def get_north_quiz():
-    
-    return template('north_quiz')
+def get_north_quiz(db, cursor):
+    north=quiz.get_quiz_north(db, cursor)
+    return template('north_quiz',north=north)
 
 @route('/east_quiz')
 def get_east_quiz():
