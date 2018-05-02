@@ -67,120 +67,25 @@
 <div class="col-3">
 	<h4>{{ question['Country'] }}</h4>
 	<h5 class="title">{{ question['Question'] }}</h5>
+	% for answer in answers:
+<div class="col-3">
+	<h6>{{ answer['right_answer']}}</h6>
+	<h6>{{ answer['wrong_answer_1']}}</h6>
+	<h6>{{ answer['wrong_answer_2']}}</h6>
 </div>
+% end
+</div>
+
 % end	
 
+
 				
 				
 				
+		</div>		
 				
 				
-				
-                <div class="three_radios">
-                  <div class="radio">
-                    <label><input type="radio" name="optradio">Hekla</label>
-                  </div>
-                  <div class="radio">
-                    <label><input type="radio" name="optradio">Etna</label>
-                  </div>
-                  <div class="radio disabled">
-                    <label><input type="radio" name="optradio">Katlan</label>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </form>
 
-
-      <hr class="featurette-divider">
-        <form>
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Norge<span class="text-muted"></span></h2>
-                    <p>Ungefär hur lång kustlinje har landet?</p>
-
-                    <div class="three_radios">
-                      <div class="radio">
-                        <label><input type="radio" name="optradio">2000 km</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="optradio">2500 km</label>
-                      </div>
-                      <div class="radio disabled">
-                        <label><input type="radio" name="optradio">4000 km </label>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-
-
-        <hr class="featurette-divider">
-          <form>
-              <div class="row featurette">
-                  <div class="col-md-7">
-                      <h2 class="featurette-heading">Sverige<span class="text-muted"></span></h2>
-                      <p>Vilket av följande är <em>inte</em> ett av landets naturtillgångar?</p>
-
-                      <div class="three_radios">
-                        <div class="radio">
-                          <label><input type="radio" name="optradio">Koppas</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio">Arsenik</label>
-                        </div>
-                        <div class="radio disabled">
-                          <label><input type="radio" name="optradio">Kalksten </label>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </form>
-
-          <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Finland<span class="text-muted"></span></h2>
-                        <p>Vilken flod är landets längsta?</p>
-
-                        <div class="three_radios">
-                          <div class="radio">
-                            <label><input type="radio" name="optradio">Vouksen</label>
-                          </div>
-                          <div class="radio">
-                            <label><input type="radio" name="optradio">Kemi älv</label>
-                          </div>
-                          <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Torne älv</label>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-          <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Rysslad<span class="text-muted"></span></h2>
-                        <p>På vilken plats hamnar landet ytmässigt i Europa?</p>
-
-                        <div class="three_radios">
-                          <div class="radio">
-                            <label><input type="radio" name="optradio">Plats 1</label>
-                          </div>
-                          <div class="radio">
-                              <label><input type="radio" name="optradio">Plats 2</label>
-                          </div>
-                          <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Plats 4</label>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-</div> -->
 
 <!--Länk till nästa quiz-sida-->
     <p class="float-right"><a href="west_quiz">Väst-quiz!</a></p>

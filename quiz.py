@@ -22,3 +22,12 @@ def get_quiz_north():
     # Tar emot svaret, sparar det i variabeln "north"
     north = cursor.fetchall()
     return north
+
+def get_answers_north():
+    db, cursor = connectDB()
+    # Skickar iväg en fråga för att hämta alla svar från tabellen "answers"
+    sql = "SELECT * FROM `answers` WHERE answersID = '{}'".format("1")
+    cursor.execute(sql)
+    # Tar emot svaret, sparar det i variabeln "north"
+    north_answers = cursor.fetchall()
+    return north_answers
