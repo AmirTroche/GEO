@@ -15,7 +15,7 @@ def connectDB():
                       
 
 def get_quiz_north(db, cursor):
-    # Skickar iväg en fråga för att hämta alla fakta från tabellen "north facts"
+    # Skickar iväg en fråga för att hämta alla frågor från tabellen "questions"
     sql = "SELECT * FROM questions where Area = Norra Europa"
     cursor.execute(sql)
     # Tar emot svaret, sparar det i variabeln "north"
