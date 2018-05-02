@@ -1,104 +1,98 @@
 <!DOCTYPE html>
 <html lang="se-sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your GEO</title>
-    <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
-    <meta name="description" content="Geographic for kids">
-    <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
-    <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/main.css">
-</head>
-
-<body>
-    <header>
-        <!-- Navigation meny -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Your GEO</title>
+        <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
+        <meta name="description" content="Geographic for kids">
+        <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
+        <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation meny -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Läs På
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="north_facts">Norra Europa</a>
-                            <a class="dropdown-item" href="west_facts">Västra Europa</a>
-                            <a class="dropdown-item" href="south_facts">Södra Europa</a>
-                            <a class="dropdown-item" href="east_facts">Östra Europa</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="north_facts">Norra Europa</a>
+                                <a class="dropdown-item" href="west_facts">Västra Europa</a>
+                                <a class="dropdown-item" href="south_facts">Södra Europa</a>
+                                <a class="dropdown-item" href="east_facts">Östra Europa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="north_quiz">Norra Europa</a>
-                            <a class="dropdown-item" href="west_quiz">Västra Europa</a>
-                            <a class="dropdown-item" href="south_quiz">Södra Europa</a>
-                            <a class="dropdown-item" href="east_quiz">Östra Europa</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="contact">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!----------------- Norra europa fakta container   ------------------->
-    <main role="main">
-        <div class="container marketing">
-            <!-- Norra Europa -->
-            <h1 class="display-2">Norra Europa</h1>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Island <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Reykjavik</li>
-                        <li><strong>Officiellt språk:</strong> isländska</li>
-                        <li><strong>President:</strong> Guoni Jóhannesson</li>
-                        <li><strong>Demografi:</strong> 343 960 (2017)</li>
-                        <li><strong>Yta:</strong> 103 000 km² (17 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Hvannadalshnjúkur<br>Största sjö: Þingvallavatn<br>Längsta flod: Pjórsá</li>
-                        <li><strong>Geografi:</strong> Island är en öbildning som bildades genom vulkanism och detta präglar landets geologiska karaktär. Naturen på ön anses vara mycket vacker. Man kan bland annat se den kända vulkanen Hekla. I väst finns
-                            fjordar och i den södra delen av kusten har det bildats en sandslätt av avlagringar från floder. Östra kustens fjordar är många men de är mindre vid den västra kusten. Med undantag från sydkusten, som till största delen är
-                            jämn och sandig, är Islands stränder i allmänhet väldigt branta.
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="north_quiz">Norra Europa</a>
+                                <a class="dropdown-item" href="west_quiz">Västra Europa</a>
+                                <a class="dropdown-item" href="south_quiz">Södra Europa</a>
+                                <a class="dropdown-item" href="east_quiz">Östra Europa</a>
+                            </div>
                         </li>
-                        <li><strong>Kända berg:</strong>Hekla, Esja, Katla</li>
-                        <li><strong>Känt vatten:</strong>Húnflói, Skálfandi</li>
-                        <li><strong>Klimat:</strong>Klimatet påverkas i stort utsträckning av de havsströmmar som omger ön. Havets temperatur omkring landet påverkas av en gren av golfströmmen och Irmingerströmmen från sydväst som värmer upp landet. Den längst
-                            Grönland löpande polarströmmen tillför ön däremot stora ismassor som kan ligga kvar i norra kusten långt fram på sommaren. Ostkusten berörs av en annan, nordostlig, polarström. De olika strömmarna i förening med ebb och flod
-                            åstadkommer våldsamma strömvirvlar. Sydkusten är generellt varmare, blötare och blåsigare än den norra. Det centrala höglandet är det kallaste delen av Island.
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="contact">Kontakt</a>
                         </li>
                     </ul>
-                    <p class="lead">
-                    </p>
                 </div>
-                <div class="col-md-5">
-
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/islandflag.png" alt="island flagga">
-
+            </nav>
+        </header>
+        <!----------------- Norra europa fakta container   ------------------->
+        <main role="main">
+            <div class="container marketing">
+                <!-- Norra Europa -->
+                <h1 class="display-2">Norra Europa</h1>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Island <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Reykjavik</li>
+                            <li><strong>Officiellt språk:</strong> isländska</li>
+                            <li><strong>President:</strong> Guoni Jóhannesson</li>
+                            <li><strong>Demografi:</strong> 343 960 (2017)</li>
+                            <li><strong>Yta:</strong> 103 000 km² (17 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Hvannadalshnjúkur<br>Största sjö: Þingvallavatn<br>Längsta flod: Pjórsá</li>
+                            <li><strong>Geografi:</strong> Island är en öbildning som bildades genom vulkanism och detta präglar landets geologiska karaktär. Naturen på ön anses vara mycket vacker. Man kan bland annat se den kända vulkanen Hekla. I väst finns
+                                fjordar och i den södra delen av kusten har det bildats en sandslätt av avlagringar från floder. Östra kustens fjordar är många men de är mindre vid den västra kusten. Med undantag från sydkusten, som till största delen är
+                                jämn och sandig, är Islands stränder i allmänhet väldigt branta.
+                            </li>
+                            <li><strong>Kända berg:</strong>Hekla, Esja, Katla</li>
+                            <li><strong>Känt vatten:</strong>Húnflói, Skálfandi</li>
+                            <li><strong>Klimat:</strong>Klimatet påverkas i stort utsträckning av de havsströmmar som omger ön. Havets temperatur omkring landet påverkas av en gren av golfströmmen och Irmingerströmmen från sydväst som värmer upp landet. Den längst
+                                Grönland löpande polarströmmen tillför ön däremot stora ismassor som kan ligga kvar i norra kusten långt fram på sommaren. Ostkusten berörs av en annan, nordostlig, polarström. De olika strömmarna i förening med ebb och flod
+                                åstadkommer våldsamma strömvirvlar. Sydkusten är generellt varmare, blötare och blåsigare än den norra. Det centrala höglandet är det kallaste delen av Island.
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/islandflag.png" alt="island flagga">
+                    </div>
                 </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Norge <span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Norge <span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Oslo</li>
                             <li><strong>Officiellt språk:</strong> norska (bokmål, nynorska) </li>
@@ -117,20 +111,19 @@
                             <li><strong>Kända berg:</strong>Galdhöpiggen, Glittertind</li>
                             <li><strong>Känt vatten:</strong>Sognefjorden, Glomma</li>
                             <li><strong>Klimat:</strong>Tack vare Golfströmmen har Norge ett varmare klimat och med mer nederbörd än många andra platser på samma nordliga breddgrad. Den nordligaste delen har ett subarktiskt kustklimat medan Svalbard har ett
-                                arktisk tundraklimat. </li>
+                                arktisk tundraklimat. 
+                            </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/norgeflag.png" alt="Norge flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/norgeflag.png" alt="Norge flagga">
-
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Sverige <span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Sverige <span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Stockholm</li>
                             <li><strong>Officiellt språk:</strong> svenska
@@ -157,18 +150,16 @@
                                 präglas landet av fjäll och har ett subarktiskt klimat. Under delar av sommaren är det midnattssol i vissa delar av Sverige medan under vintern rådet det ibland totalmörker.
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/sverigeflag.png" alt="sverige flagga">
+                    </div>
                 </div>
-                <div class="col-md-5">
-
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/sverigeflag.png" alt="sverige flagga">
-
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Finland <span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Finland <span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Helsingfors</li>
                             <li><strong>Officiellt språk:</strong> finska, svenska</li>
@@ -186,18 +177,19 @@
                             <li><strong>Kända berg:</strong>Skanderna, Kareliderna</li>
                             <li><strong>Känt vatten:</strong>Saimen, Päijänne</li>
                             <li><strong>Klimat:</strong>Tack vare Golfströmmen är Finland tämligen gynnsamt jämfört med klimatet på motsvarande breddgrader på andra håll. Det är både maritimt och kontinentalt påverkat. Kontinentaliteten, som kännetecknas
-                                av varma somrar och kalla snörika vintrar, är mest utpräglat i nordost. Mildast är klimatet i sydväst.</li>
+                                av varma somrar och kalla snörika vintrar, är mest utpräglat i nordost. Mildast är klimatet i sydväst.
+                            </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/finlandsflag.png" alt="finland flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/finlandsflag.png" alt="finland flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Ryssland <span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Ryssland <span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Moskva</li>
                             <li><strong>Officiellt språk:</strong> ryska
@@ -225,16 +217,16 @@
                                 till havet. Längst upp i norr, vid ishavskusten, rådet det polarklimat med permafrost året om. Allra sydligaste, vid Svarta Havet, råder det subtropiskt klimat.
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="static/img/rysslandflag.png" alt="ryssland flagga">
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="static/img/rysslandflag.png" alt="ryssland flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Danmark<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Danmark<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Köpenhamn</li>
                             <li><strong>Officiellt språk:</strong> danska</li>
@@ -254,18 +246,19 @@
                             <li><strong>Känt vatten:</strong> Arresø, Gudenå
                             </li>
                             <li><strong>Klimat:</strong>Danmark ligger i den tempererade zonen och klimatet är, på grund av vindarna, milt för breddgraden. Extrema förhållande förekommer sällan då höga och branta berg saknas och ingen plats i landet ligger
-                                längre än 55 kilometer från kusten. Förhållandevis är temperaturskillnaderna mellan årstiderna små.</li>
+                                längre än 55 kilometer från kusten. Förhållandevis är temperaturskillnaderna mellan årstiderna små.
+                            </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="static/img/danmarkflag.png" alt="danmark flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="static/img/danmarkflag.png" alt="danmark flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Estland <span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Estland <span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Talinn</li>
                             <li><strong>Officiellt språk:</strong> estniska
@@ -291,16 +284,16 @@
                                 -5 grader i februari, som är årets kallaste månad. Juli är den varmaste månaden och bjuder på en medeltemperatur på cirka 20 grader.
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="static/img/estlandflag.png" alt="estland flagga">
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="static/img/estlandflag.png" alt="estland flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Lettland<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Lettland<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Riga</li>
                             <li><strong>Officiellt språk:</strong> lettiska</li>
@@ -322,16 +315,16 @@
                                 medeltemperaturen.
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="static/img/lettlandflag.jpg" alt="lettland flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="static/img/lettlandflag.jpg" alt="lettland flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Litauen<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Litauen<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Vilnius</li>
                             <li><strong>Officiellt språk:</strong> litauiska
@@ -355,29 +348,28 @@
                             <li><strong>Klimat: </strong>Klimatet i Litauen är kallt och tempererat. Litauen har en betydande mängd nederbörd under åre även sant för den torraste månaden.
                             </li>
                         </ul>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="static/img/litauenflag.png" alt="litauen flagga">
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="static/img/litauenflag.png" alt="litauen flagga">
+                    </div>
                 </div>
             </div>
-
-            <!-- /.container -->
-            <!-- FOOTER -->
-            <footer class="container">
-                <hr class="featurette-divider">
-                <p class="float-right"><a href="north_facts">Upp</a></p>
-                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </footer>
-    </main>
-    <!-- Bootstrap core JavaScript
+        </main>
+        <!-- /.container -->
+        <!-- FOOTER -->
+        <footer class="container">
+            <hr class="featurette-divider">
+            <p class="float-right"><a href="north_facts">Upp</a></p>
+            <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+        <!-- Bootstrap core JavaScript
             ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</body>
-
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
 </html>

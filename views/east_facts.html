@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="se-sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your GEO</title>
-    <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
-    <meta name="description" content="Geographic for kids">
-    <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
-    <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/main.css">
-</head>
-
-<body>
-    <header>
-        <!-- Navigation meny -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Your GEO</title>
+        <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
+        <meta name="description" content="Geographic for kids">
+        <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
+        <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation meny -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Läs På
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="north_facts">Norra Europa</a>
-                            <a class="dropdown-item" href="west_facts">Västra Europa</a>
-                            <a class="dropdown-item" href="south_facts">Södra Europa</a>
-                            <a class="dropdown-item" href="east_facts">Östra Europa</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="north_facts">Norra Europa</a>
+                                <a class="dropdown-item" href="west_facts">Västra Europa</a>
+                                <a class="dropdown-item" href="south_facts">Södra Europa</a>
+                                <a class="dropdown-item" href="east_facts">Östra Europa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="north_quiz">Norra Europa</a>
-                            <a class="dropdown-item" href="west_quiz">Västra Europa</a>
-                            <a class="dropdown-item" href="south_quiz">Södra Europa</a>
-                            <a class="dropdown-item" href="east_quiz">Östra Europa</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="contact">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!----------------- Östra europa fakta container   ------------------->
-    <main role="main">
-        <div class="container marketing">
-            <!-- Östra Europa -->
-            <h1 class="display-2">Östra Europa</h1>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Ukraina <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Kiev</li>
-                        <li><strong>Officiellt språk:</strong> ukrainska</li>
-                        <li><strong>Statsskick:</strong> Republik</li>
-                        <li><strong>President:</strong> Petro Oorosjenko</li>
-                        <li><strong>Demografi:</strong> 45 778 500 (2011)</li>
-                        <li><strong>Yta:</strong> 603 700 km² (2 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Hoverla<br>Största sjö: Dnistrovskyj<br>Längsta flod: Dniplo</li>
-                        <li><strong>Geografi:</strong> Landskapet är mestadels platt, fruktbart slättland och högland som delas upp av många floder. Bördigt land med svarjord och är en viktig jordburksexportör för övriga Europa.
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="north_quiz">Norra Europa</a>
+                                <a class="dropdown-item" href="west_quiz">Västra Europa</a>
+                                <a class="dropdown-item" href="south_quiz">Södra Europa</a>
+                                <a class="dropdown-item" href="east_quiz">Östra Europa</a>
+                            </div>
                         </li>
-                        <li><strong>Kända berg:</strong> Karpaterna i väst, Jajlabergen på Krims i söder. </li>
-                        <li><strong>Känt vatten:</strong> Dnipro, Dnestr och Bug.</li>
-                        <li><strong>Klimat:</strong> För det mesta ett tempererat kontinentalklimat, men snarare med medelhavsklimat längs Krims sydkust i söder. Nederbörden är ojämt fördelar men mest i väst och norr. Vintertemperaturen varierar i områdena
-                            i landet, från kyligt i sydkusten till kallt i inlandet. Somrarna är varma, framförallt i syd. Medelhavsklimat vid Svarta havet och på bladn annat Krim (ö).
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="contact">Kontakt</a>
                         </li>
                     </ul>
-                    <p class="lead">
-                    </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/ukrainaflag.jpg" alt="ukraina flagga">
+            </nav>
+        </header>
+        <!----------------- Östra europa fakta container   ------------------->
+        <main role="main">
+            <div class="container marketing">
+                <!-- Östra Europa -->
+                <h1 class="display-2">Östra Europa</h1>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Ukraina <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Kiev</li>
+                            <li><strong>Officiellt språk:</strong> ukrainska</li>
+                            <li><strong>Statsskick:</strong> Republik</li>
+                            <li><strong>President:</strong> Petro Oorosjenko</li>
+                            <li><strong>Demografi:</strong> 45 778 500 (2011)</li>
+                            <li><strong>Yta:</strong> 603 700 km² (2 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Hoverla<br>Största sjö: Dnistrovskyj<br>Längsta flod: Dniplo</li>
+                            <li><strong>Geografi:</strong> Landskapet är mestadels platt, fruktbart slättland och högland som delas upp av många floder. Bördigt land med svarjord och är en viktig jordburksexportör för övriga Europa.
+                            </li>
+                            <li><strong>Kända berg:</strong> Karpaterna i väst, Jajlabergen på Krims i söder. </li>
+                            <li><strong>Känt vatten:</strong> Dnipro, Dnestr och Bug.</li>
+                            <li><strong>Klimat:</strong> För det mesta ett tempererat kontinentalklimat, men snarare med medelhavsklimat längs Krims sydkust i söder. Nederbörden är ojämt fördelar men mest i väst och norr. Vintertemperaturen varierar i områdena
+                                i landet, från kyligt i sydkusten till kallt i inlandet. Somrarna är varma, framförallt i syd. Medelhavsklimat vid Svarta havet och på bladn annat Krim (ö).
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/ukrainaflag.jpg" alt="ukraina flagga">
+                    </div>
                 </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Polen<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Polen<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Warszawa</li>
                             <li><strong>Officiellt språk:</strong> polska </li>
@@ -111,46 +108,48 @@
                             <li><strong>Kända berg:</strong> Karpaterna, Sudeterna, Sniezka, Rysy</li>
                             <li><strong>Känt vatten:</strong> Wisla, Odra, Warta, Västra Bug</li>
                             <li><strong>Klimat:</strong> Polen har ett tempererat klimat, i norr och väst är klimatet mildare med svalare somrar och mildare vintrar, medan klimatet i syd och öst är ett inlandsklimat med varma somrar och kalla vintrar. I söder
-                                ligger Pustynia Bledowska som är en öken.</li>
+                                ligger Pustynia Bledowska som är en öken.
+                            </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/polenflag.jpg" alt="polen flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/polenflag.jpg" alt="polen flagga">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Slovakien <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Bratislava</li>
+                            <li><strong>Officiellt språk:</strong> slovakiska</li>
+                            <li><strong>Statsskick:</strong> Republik</li>
+                            <li><strong>President:</strong> Andrej Kiska</li>
+                            <li><strong>Demografi:</strong> 5 411 000 (2009)</li>
+                            <li><strong>Yta:</strong> 48 845 km² (28 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Gerlacjoviský Stít
+                                <br>Största sjö: Zemplínska Sírava<br>Längsta flod: Donau
+                            </li>
+                            <li><strong>Geografi:</strong> Det slovakiska landskapet utmärks av en mängd berg och dalar och Karpaterna sträcker sig över landets norra del. Bergstopparna i Tatrabergen har flera populära skidorter. I sydost och sydväst, längs Donaus,
+                                är landskapet flackt. 41% av Slovakiens ytvidd är skog.
+                            </li>
+                            <li><strong>Kända berg:</strong> Karpaterna, Rysy</li>
+                            <li><strong>Känt vatten:</strong> Váh, Hron </li>
+                            <li><strong>Klimat:</strong> Klimatet är tempererat med svala somrar och kalla vintrar.
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/slovakiaflag.png" alt="slovakien flagga">
+                    </div>
                 </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Slovakien <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Bratislava</li>
-                        <li><strong>Officiellt språk:</strong> slovakiska</li>
-                        <li><strong>Statsskick:</strong> Republik</li>
-                        <li><strong>President:</strong> Andrej Kiska</li>
-                        <li><strong>Demografi:</strong> 5 411 000 (2009)</li>
-                        <li><strong>Yta:</strong> 48 845 km² (28 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Gerlacjoviský Stít
-                            <br>Största sjö: Zemplínska Sírava<br>Längsta flod: Donau</li>
-                        <li><strong>Geografi:</strong> Det slovakiska landskapet utmärks av en mängd berg och dalar och Karpaterna sträcker sig över landets norra del. Bergstopparna i Tatrabergen har flera populära skidorter. I sydost och sydväst, längs Donaus,
-                            är landskapet flackt. 41% av Slovakiens ytvidd är skog.
-                        </li>
-                        <li><strong>Kända berg:</strong> Karpaterna, Rysy</li>
-                        <li><strong>Känt vatten:</strong> Váh, Hron </li>
-                        <li><strong>Klimat:</strong> Klimatet är tempererat med svala somrar och kalla vintrar.
-                        </li>
-                    </ul>
-                    <p class="lead">
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/slovakiaflag.png" alt="slovakien flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Rumänien<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Rumänien<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Bukarest</li>
                             <li><strong>Officiellt språk:</strong> rumänska</li>
@@ -168,46 +167,47 @@
                             <li><strong>Kända berg:</strong> Karpaterna</li>
                             <li><strong>Känt vatten:</strong> Donau, Prut</li>
                             <li><strong>Klimat:</strong> Landet har stora temperaturväxlingar där till exempel deras högsta temperatur var uppmätt till 44,6 grader (1951) och lägsta -38,5 grader (1942). Nederbörden är måttlig och har även snöfall på vintern.
-                                </li>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/romaniaflag.png" alt="rumänien flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/romaniaflag.png" alt="rumänien flagga">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Moldavien <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Chișinău</li>
+                            <li><strong>Officiellt språk:</strong> rumänska, ryska, ungerska, gagauziska</li>
+                            <li><strong>Statsskick:</strong> Republik</li>
+                            <li><strong>President:</strong> Igor Dodon</li>
+                            <li><strong>Demografi:</strong> 3 553 056 (2015)</li>
+                            <li><strong>Yta:</strong> 33 851 km² (33 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Dealul Balanesti
+                                <br>Största sjö: -<br>Längsta flod: Dnjestr
+                            </li>
+                            <li><strong>Geografi:</strong> Moldavien är beläget nordöst om Balkanhalvön i sydöstra Europa, nordöst om bergssystemet Karpaterna och nordväst om Svarta havet, i utkanten av det ukrainska slättlandet som breder ut sig åt nordöst.
+                                Landskapet är mestadels låglänt, flackt och böljande. I norr och söder finns stäpp. Den norra delen av landet är kuperad.
+                            </li>
+                            <li><strong>Kända berg:</strong> Gora Kashi, Dealul Visoca</li>
+                            <li><strong>Känt vatten:</strong> Dnestr, Prut</li>
+                            <li><strong>Klimat:</strong> Moldaviens bördiga jord, framför allt svartjorden på stäppen i söder, och kontinentala klimat har gjort landet till en av de mest produktiva jordbruksregionerna i området, med storodling av frukt och vin.
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/moldovaflag.png" alt="moldavien flagga">
+                    </div>
                 </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Moldavien <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Chișinău</li>
-                        <li><strong>Officiellt språk:</strong> rumänska, ryska, ungerska, gagauziska</li>
-                        <li><strong>Statsskick:</strong> Republik</li>
-                        <li><strong>President:</strong> Igor Dodon</li>
-                        <li><strong>Demografi:</strong> 3 553 056 (2015)</li>
-                        <li><strong>Yta:</strong> 33 851 km² (33 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Dealul Balanesti
-                            <br>Största sjö: -<br>Längsta flod: Dnjestr</li>
-                        <li><strong>Geografi:</strong> Moldavien är beläget nordöst om Balkanhalvön i sydöstra Europa, nordöst om bergssystemet Karpaterna och nordväst om Svarta havet, i utkanten av det ukrainska slättlandet som breder ut sig åt nordöst.
-                            Landskapet är mestadels låglänt, flackt och böljande. I norr och söder finns stäpp. Den norra delen av landet är kuperad.
-                        </li>
-                        <li><strong>Kända berg:</strong> Gora Kashi, Dealul Visoca</li>
-                        <li><strong>Känt vatten:</strong> Dnestr, Prut</li>
-                        <li><strong>Klimat:</strong> Moldaviens bördiga jord, framför allt svartjorden på stäppen i söder, och kontinentala klimat har gjort landet till en av de mest produktiva jordbruksregionerna i området, med storodling av frukt och vin.
-                        </li>
-                    </ul>
-                    <p class="lead">
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/moldovaflag.png" alt="moldavien flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Vitryssland<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Vitryssland<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Minsk</li>
                             <li><strong>Officiellt språk:</strong> vitryska, ryska</li>
@@ -226,45 +226,47 @@
                             <li><strong>Kända berg:</strong> Dzerzjinskijberget</li>
                             <li><strong>Känt vatten:</strong> Naratj, Asvejskaje, Dnepr, Pryjap, Berezina, Sozj, Njemen, Daugava, Bug</li>
                             <li><strong>Klimat:</strong> Landet har ett fuktigt kontinentalklimat. Vintrarna är stränga med omfattande snötäcken som varar mellan 105 till 145 dagar. Somrarna är svala och tillsammans med våren är de de fuktigaste tiderna på
-                                året även om det inte kommer några större mängder nederbörd.</li>
+                                året även om det inte kommer några större mängder nederbörd.
+                            </li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/belarusflag.png" alt="vitryssland flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/belarusflag.png" alt="vitryssland flagga">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Kosovo <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Pristina</li>
+                            <li><strong>Officiellt språk:</strong> albanska, serbiska</li>
+                            <li><strong>Statsskick:</strong> Republik</li>
+                            <li><strong>President:</strong> Hashim Thaci</li>
+                            <li><strong>Demografi:</strong> 1 804 044 (2014)</li>
+                            <li><strong>Yta:</strong> 10 908 km² (40 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Deravica/Gjeravica
+                                <br>Största sjö: Ujman/Gazivoda<br>Längsta flod: Ibar/Iber
+                            </li>
+                            <li><strong>Geografi:</strong> Kosovo är omgivet av berg och en bergskedja delar landet i två bäckenlandskap.
+                            </li>
+                            <li><strong>Kända berg:</strong> Gjeravoca, Pec</li>
+                            <li><strong>Känt vatten:</strong> Donau, Vita Drin</li>
+                            <li><strong>Klimat:</strong> Kosovo har inlandsklimat med varma, torra somrar och relativt kalla vintrar, ofta med mycket snö. Det regnar som mest under oktober till december.
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/kosovoflag.JPG" alt="kosovo flagga">
+                    </div>
                 </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Kosovo <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Pristina</li>
-                        <li><strong>Officiellt språk:</strong> albanska, serbiska</li>
-                        <li><strong>Statsskick:</strong> Republik</li>
-                        <li><strong>President:</strong> Hashim Thaci</li>
-                        <li><strong>Demografi:</strong> 1 804 044 (2014)</li>
-                        <li><strong>Yta:</strong> 10 908 km² (40 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Deravica/Gjeravica
-                            <br>Största sjö: Ujman/Gazivoda<br>Längsta flod: Ibar/Iber</li>
-                        <li><strong>Geografi:</strong> Kosovo är omgivet av berg och en bergskedja delar landet i två bäckenlandskap.
-                        </li>
-                        <li><strong>Kända berg:</strong> Gjeravoca, Pec</li>
-                        <li><strong>Känt vatten:</strong> Donau, Vita Drin</li>
-                        <li><strong>Klimat:</strong> Kosovo har inlandsklimat med varma, torra somrar och relativt kalla vintrar, ofta med mycket snö. Det regnar som mest under oktober till december.
-                        </li>
-                    </ul>
-                    <p class="lead">
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/kosovoflag.JPG" alt="kosovo flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Azerbajdzjan<span class="text-muted"></span></h2>
-                    <p class="lead">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Azerbajdzjan<span class="text-muted"></span></h2>
+                        <p class="lead">
                         <ul>
                             <li><strong>Huvudstad:</strong> Baku</li>
                             <li><strong>Officiellt språk:</strong> azerbajdzjanska</li>
@@ -282,85 +284,86 @@
                             <li><strong>Känt vatten:</strong> Kuras, Aras´Delta</li>
                             <li><strong>Klimat:</strong> Klimatet är torrt stäppklimat i de centrala och östra delarna, subtropiskt i sydöst och tempererat vid kusten. Torrperioder förekommer.</li>
                         </ul>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/azflag.png" alt="azerbajdzjan flagga">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/azflag.png" alt="azerbajdzjan flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Georgien <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Tbilisi</li>
-                        <li><strong>Officiellt språk:</strong> georgiska</li>
-                        <li><strong>Statsskick:</strong> Republik</li>
-                        <li><strong>President:</strong> Giorgi Margvelasjvili</li>
-                        <li><strong>Demografi:</strong> 3 679 000 (2015)</li>
-                        <li><strong>Yta:</strong> 69 700 km² (43 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Sjchara
-                            <br>Största sjö: Paravani<br>Längsta flod: Alazani</li>
-                        <li><strong>Geografi:</strong> Georgien är beläget i västra Kaukasien mellan Stora Kaukasusi norr och Lilla Kaukasus i söder. Landet har kust mot Svarta havet i väst. Georgien domineras av bergslandskap. Stora delar av Georgien är
-                            täckt av skog. Det är mest björkskog i bergen, medan mycket bok, ek och kastanj förekommer på de lägre höjderna.
-                        </li>
-                        <li><strong>Kända berg:</strong> Kazbek, Sjchara</li>
-                        <li><strong>Känt vatten:</strong> Svarta havet, Kura, Rioni, Aragvi</li>
-                        <li><strong>Klimat:</strong> Bergen gör att landet har ett varierat klimat. Om vintern är det kallt med stora snömängder, men Stora Kaukasus skyddar landet mot ännu kallare luft från Ryssland i norr. Milda vindar skapar ett subtropiskt
-                            klimat i Kolchidalåglandet, medan de östliga delarna av Georgien har ett långt torrare väder.
-                        </li>
-                    </ul>
-                    <p class="lead">
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/georgiaflag.jpg" alt="georgien flagga">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Kazakstan <span class="text-muted"></span></h2>
-                    <ul>
-                        <li><strong>Huvudstad:</strong> Astana</li>
-                        <li><strong>Officiellt språk:</strong> kazakiska, ryska</li>
-                        <li><strong>Statsskick:</strong> Republik</li>
-                        <li><strong>President:</strong> Nursultan Nazarbajev</li>
-                        <li><strong>Demografi:</strong> 17 800 000 (2016) </li>
-                        <li><strong>Yta:</strong> 2 724 900 km² (14 största land i Europa)</li>
-                        <li><strong>Topografi:</strong> <br>Högsta punkt: Chan Tangiri Sjyngy
-                            <br>Största sjö: Aralsjön<br>Längsta flod: Syr-Darja</li>
-                        <li><strong>Geografi:</strong> Kazakstan är i huvudsak beläget i Centralasien, men den nordvästligaste delen, väster om Uralfloden, räknas till Europa. Landet hamnar på 14 plats ytmässigt i Europa, men inräknat hela landets yta är landet 9:de störst i världen. Landet är i stort sett plant, undantaget bergen i öst och sydöst samt några berg i söder med stora områden under havsnivå. Kazakstans nordligaste punkt ligger på cirka 55°06' nordlig bredd (Smygehuk i Sverige ligger på ca 55°20' nordlig bredd, det vill säga endast ca 26 km längre norrut).
-                        </li>
-                        <li><strong>Kända berg:</strong> Altajbergen, Tian-Shan</li>
-                        <li><strong>Känt vatten:</strong> Uralfloden, Syr-Darja, Kaspiska havet</li>
-                        <li><strong>Klimat:</strong>  Landet har ett kontinentalt klimat med varma somrar och kalla vintrar.Medeltemperaturen är i januari mellan −19 och −4 °C; i juli från 19 till 26 °C. Nederbördsnivån varierar från torra till halvtorra förhållanden.
-                        </li>
-                    </ul>
-                    <p class="lead">
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="/static/img/kazakstanflag.png" alt="Kazakstan flagga">
-                </div>
-            </div>
-
-            <!-- /.container -->
-            <!-- FOOTER -->
-            <footer class="container">
                 <hr class="featurette-divider">
-                <p class="float-right"><a href="east_facts">Upp</a></p>
-                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </footer>
-    </main>
-    <!-- Bootstrap core JavaScript
-                ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</body>
-
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Georgien <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Tbilisi</li>
+                            <li><strong>Officiellt språk:</strong> georgiska</li>
+                            <li><strong>Statsskick:</strong> Republik</li>
+                            <li><strong>President:</strong> Giorgi Margvelasjvili</li>
+                            <li><strong>Demografi:</strong> 3 679 000 (2015)</li>
+                            <li><strong>Yta:</strong> 69 700 km² (43 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Sjchara
+                                <br>Största sjö: Paravani<br>Längsta flod: Alazani
+                            </li>
+                            <li><strong>Geografi:</strong> Georgien är beläget i västra Kaukasien mellan Stora Kaukasusi norr och Lilla Kaukasus i söder. Landet har kust mot Svarta havet i väst. Georgien domineras av bergslandskap. Stora delar av Georgien är
+                                täckt av skog. Det är mest björkskog i bergen, medan mycket bok, ek och kastanj förekommer på de lägre höjderna.
+                            </li>
+                            <li><strong>Kända berg:</strong> Kazbek, Sjchara</li>
+                            <li><strong>Känt vatten:</strong> Svarta havet, Kura, Rioni, Aragvi</li>
+                            <li><strong>Klimat:</strong> Bergen gör att landet har ett varierat klimat. Om vintern är det kallt med stora snömängder, men Stora Kaukasus skyddar landet mot ännu kallare luft från Ryssland i norr. Milda vindar skapar ett subtropiskt
+                                klimat i Kolchidalåglandet, medan de östliga delarna av Georgien har ett långt torrare väder.
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/georgiaflag.jpg" alt="georgien flagga">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Kazakstan <span class="text-muted"></span></h2>
+                        <ul>
+                            <li><strong>Huvudstad:</strong> Astana</li>
+                            <li><strong>Officiellt språk:</strong> kazakiska, ryska</li>
+                            <li><strong>Statsskick:</strong> Republik</li>
+                            <li><strong>President:</strong> Nursultan Nazarbajev</li>
+                            <li><strong>Demografi:</strong> 17 800 000 (2016) </li>
+                            <li><strong>Yta:</strong> 2 724 900 km² (14 största land i Europa)</li>
+                            <li><strong>Topografi:</strong> <br>Högsta punkt: Chan Tangiri Sjyngy
+                                <br>Största sjö: Aralsjön<br>Längsta flod: Syr-Darja
+                            </li>
+                            <li><strong>Geografi:</strong> Kazakstan är i huvudsak beläget i Centralasien, men den nordvästligaste delen, väster om Uralfloden, räknas till Europa. Landet hamnar på 14 plats ytmässigt i Europa, men inräknat hela landets yta är landet 9:de störst i världen. Landet är i stort sett plant, undantaget bergen i öst och sydöst samt några berg i söder med stora områden under havsnivå. Kazakstans nordligaste punkt ligger på cirka 55°06' nordlig bredd (Smygehuk i Sverige ligger på ca 55°20' nordlig bredd, det vill säga endast ca 26 km längre norrut).
+                            </li>
+                            <li><strong>Kända berg:</strong> Altajbergen, Tian-Shan</li>
+                            <li><strong>Känt vatten:</strong> Uralfloden, Syr-Darja, Kaspiska havet</li>
+                            <li><strong>Klimat:</strong>  Landet har ett kontinentalt klimat med varma somrar och kalla vintrar.Medeltemperaturen är i januari mellan −19 och −4 °C; i juli från 19 till 26 °C. Nederbördsnivån varierar från torra till halvtorra förhållanden.
+                            </li>
+                        </ul>
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="/static/img/kazakstanflag.png" alt="Kazakstan flagga">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- /.container -->
+        <!-- FOOTER -->
+        <footer class="container">
+            <hr class="featurette-divider">
+            <p class="float-right"><a href="east_facts">Upp</a></p>
+            <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
 </html>
