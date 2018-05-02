@@ -18,10 +18,14 @@ def get_quiz_north():
     db, cursor = connectDB()
     # Skickar iväg en fråga för att hämta alla frågor från tabellen "questions"
     sql = "SELECT * FROM questions where Area = '{}'".format("Norra Europa")
+    
     cursor.execute(sql)
     # Tar emot svaret, sparar det i variabeln "north"
     north = cursor.fetchall()
     return north
+
+'''Alternativ selectsats för att ta fram allt innehåll:
+SELECT * FROM questions JOIN answers on answers.answersID=questions.QuestionID where Area ='Norra Europa';'''
 
 def get_answers_north():
     db, cursor = connectDB()
