@@ -20,8 +20,6 @@ body{
 
 }
 
-
-
 .homepage{
     margin-top: 8%;
 }
@@ -81,32 +79,56 @@ body{
 }
 
 .first-box{padding:10px;background:#9C0;}
+
 .second-box{padding:10px; background:#39F;}
+
 .third-box{padding:10px;background:#F66;}
+
 .fourth-box{padding:10px;background:#6CC;}
 
 
 /*Collapse Facit*/
 .collapsible {
-    background-color: #777;
+    background-color: ;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: ;
     border: none;
     text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
     outline: none;
     font-size: 15px;
+    margin-top: 5%;
+    margin-left: 40px;
+    margin-bottom: 3%
 }
 
-.active, .collapsible:hover {
-    background-color: #555;
+.collapsible:hover {
+    background-color:MediumSeaGreen;
 }
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #F5F5F5;
+}
+
+/* Container för quiz */
+
+.background-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+    height: 100%;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+.next-quiz{
+    margin-top: 80px;
+    margin-right: 15px;
 }
 

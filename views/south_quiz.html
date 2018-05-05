@@ -1,574 +1,522 @@
 <!DOCTYPE html>
 <html lang="se-sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your GEO</title>
-    <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
-    <meta name="description" content="Geographic for kids">
-    <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
-    <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/main.css">
-</head>
-
-<body>
-    <header>
-        <!-- Navigation meny -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Your GEO</title>
+        <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
+        <meta name="description" content="Geographic for kids">
+        <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
+        <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation meny -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Läs På
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="north_facts">Norra Europa</a>
-                            <a class="dropdown-item" href="west_facts">Västra Europa</a>
-                            <a class="dropdown-item" href="south_facts">Södra Europa</a>
-                            <a class="dropdown-item" href="east_facts">Östra Europa</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="north_facts">Norra Europa</a>
+                                <a class="dropdown-item" href="west_facts">Västra Europa</a>
+                                <a class="dropdown-item" href="south_facts">Södra Europa</a>
+                                <a class="dropdown-item" href="east_facts">Östra Europa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="north_quiz">Norra Europa</a>
-                            <a class="dropdown-item" href="west_quiz">Västra Europa</a>
-                            <a class="dropdown-item" href="south_quiz">Södra Europa</a>
-                            <a class="dropdown-item" href="east_quiz">Östra Europa</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="north_quiz">Norra Europa</a>
+                                <a class="dropdown-item" href="west_quiz">Västra Europa</a>
+                                <a class="dropdown-item" href="south_quiz">Södra Europa</a>
+                                <a class="dropdown-item" href="east_quiz">Östra Europa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!----------------- Södra europa quiz container   ------------------->
+        <main role="main">
+            <div class="background-container">
+                <div class="container marketing">
+                    <h1 class="display-2">Södra Europa</h1>
+                    <hr class="featurette-divider">
+                    <!--fråga-->
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Spanien<span class="text-muted"></span></h2>
+                                <p>En stor ögrupp ligger i Atlanten, vad heter den?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Bahamas</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Kanarieöarna</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Amiralsöarna</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="contact">Kontakt</a>
-                    </li>
-                </ul>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Portugal<span class="text-muted"></span></h2>
+                                <p>Vad stämmer in på landet?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Ett av kontinentens varamste länder</label> <!--SVENSKA?????????????-->
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">En av de minsta länderna</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Råder extremt kallt väder på sommaren</label> <!--SVENSKA??????????-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Italien<span class="text-muted"></span></h2>
+                                <p>Ungefär hur många invånare hade landet 2016</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Över 60 miljoner</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Över 30 miljoner</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Över 80 miljoner</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Österrike<span class="text-muted"></span></h2>
+                                <p>Hur många landskapsregioner består landet av?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Två</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Fyra</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Fem</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Slovenien<span class="text-muted"></span></h2>
+                                <p>Vad stämmer in på landet?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Europas femte största land till ytan</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Europas trejde skogstätaste land</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Ca 50% av landet är skyddat som Natura 2000</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Ungern<span class="text-muted"></span></h2>
+                                <p>Vilken stor flod reser genom mer än bara Ungern?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Sava</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Donau</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Themsen</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Kroatien<span class="text-muted"></span></h2>
+                                <p>Vad heter landets högsta punkt?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Triglav</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Maglic</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Dinara</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Bosnien och Hercegovina<span class="text-muted"></span></h2>
+                                <p>Vad stämmer <em>inte</em> överrens med landet?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Landets kustlinje är 24 kilometer lång</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Landet är för det mesta bergigt och skogsklätt</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Landet är ett av Europas minsta länder</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Montenegro<span class="text-muted"></span></h2>
+                                <p>Vilken sjö delas mellan Montenegro och Albanien?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Tarasjön</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Skodersjön</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Lim</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Albanien<span class="text-muted"></span></h2>
+                                <p>Vilket sorts klimat råder vid landets kust?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Kontinentalt klimat</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Inlandsklimat</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Medelhavsklimat</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Serbien<span class="text-muted"></span></h2>
+                                <p>Vilket språk är landets officiella språk?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Engelska</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Serbiska</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Albanska</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Grekland<span class="text-muted"></span></h2>
+                                <p>Vad är vanligt i vissa delar av landet?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Torka</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Extrema väderförhållanden</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Snö och is</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Bulgarien<span class="text-muted"></span></h2>
+                                <p>Vad heter huvudstaden?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Sofia</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Anna</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Henrik</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Makedonien<span class="text-muted"></span></h2>
+                                <p>Vad heter landets längsta flod?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Ohrid</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Vardar</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Crna Reka</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Turkiet<span class="text-muted"></span></h2>
+                                <p>Vad stämmer in på det inre området i landet?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Inlandsklimat</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Medelhavsklimat</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Snö och is året om</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Malta<span class="text-muted"></span></h2>
+                                <p>Vad heter huvudstaden?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Mariette</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Valletta</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Nora</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">San Marino<span class="text-muted"></span></h2>
+                                <p>Vad heter huvudstaden?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Lasarote</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">San Marino</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Novaw</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--fråga-->
+                    <hr class="featurette-divider">
+                    <form>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Vatikanstaden<span class="text-muted"></span></h2>
+                                <p>På vilken plats hamnar landet ytmässigt i Europa?</p>
+                                <div class="three_radios">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Plats 43</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Plats 56</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label><input type="radio" name="optradio">Plats 49</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--Länk till nästa quiz-sida-->
+                    <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
+                </div>
+                <!--Collapse-funktion, Facit-->
+                <button class="btn btn-primary btn-lg collapsible">FACIT</button>
+                <div class="content">
+                    <p><strong>LAND.</strong> RÄTT SVAR
+                        <br>
+                        <strong>Spanien:</strong> Kanarieöarna
+                        <br>
+                        <strong>Portugal:</strong> Ett av kontinentens varmaste länder
+                        <br>
+                        <strong>Italien:</strong> Över 60 miljoner
+                        <br>
+                        <strong>Österrike:</strong> Fem
+                        <br>
+                        <strong>Slovenien:</strong> Europas trejde skogstätaste land
+                        <br>
+                        <strong>Ungern:</strong> Donau
+                        <br>
+                        <strong>Kroatien:</strong> Dinara
+                        <br>
+                        <strong>Bosnien och Hercegovina:</strong> Landets kustlinje är 24 km lång
+                        <br>
+                        <strong>Montenegro:</strong> Skodersjön
+                        <br>
+                        <strong>Albanien:</strong> Medelhavsklimat
+                        <br>
+                        <strong>Serbien:</strong> Serbiska
+                        <br>
+                        <strong>Grekland:</strong> Snö och is
+                        <br>
+                        <strong>Bulgarien:</strong> Sofia
+                        <br>
+                        <strong>Makedonien:</strong> Vardar
+                        <br>
+                        <strong>Turkiet:</strong> Inlandsklimat
+                        <br>
+                        <strong>Malta:</strong> Valletta
+                        <br>
+                        <strong>San Marino:</strong> San Marino
+                        <br>
+                        <strong>Vatikanstaden:</strong> Plats 49
+                    </p>
+                </div>
             </div>
-        </nav>
-    </header>
-
-    <!----------------- Södra europa quiz container   ------------------->
-    <main role="main">
-        <div class="container marketing">
-            <h1 class="display-2">Södra Europa</h1>
+            <!--Container marketing-->
+        </main>
+        <!-- /.container -->
+        <!-- FOOTER -->
+        <footer class="container">
             <hr class="featurette-divider">
-
-        <!--fråga-->
-        <form>
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Spanien<span class="text-muted"></span></h2>
-                    <p>En stor ögrupp ligger i Atlanten, vad heter den?</p>
-
-                        <div class="three_radios">
-                        <div class="radio">
-                            <label><input type="radio" name="optradio">Bahamas</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="optradio">Kanarieöarna</label>
-                        </div>
-                        <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Amiralsöarna</label>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Portugal<span class="text-muted"></span></h2>
-                        <p>Vad stämmer in på landet?</p>
-
-                        <div class="three_radios">
-                        <div class="radio">
-                            <label><input type="radio" name="optradio">Ett av kontinentens varamste länder</label> <!--SVENSKA?????????????-->
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="optradio">En av de minsta länderna</label>
-                        </div>
-                        <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Råder extremt kallt väder på sommaren</label> <!--SVENSKA??????????-->
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-      <!--fråga-->
-        <hr class="featurette-divider">
-          <form>
-              <div class="row featurette">
-                  <div class="col-md-7">
-                      <h2 class="featurette-heading">Italien<span class="text-muted"></span></h2>
-                      <p>Ungefär hur många invånare hade landet 2016</p>
-
-                      <div class="three_radios">
-                        <div class="radio">
-                          <label><input type="radio" name="optradio">Över 60 miljoner</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio">Över 30 miljoner</label>
-                        </div>
-                        <div class="radio disabled">
-                          <label><input type="radio" name="optradio">Över 80 miljoner</label>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Österrike<span class="text-muted"></span></h2>
-                        <p>Hur många landskapsregioner består landet av?</p>
-
-                        <div class="three_radios">
-                          <div class="radio">
-                            <label><input type="radio" name="optradio">Två</label>
-                          </div>
-                          <div class="radio">
-                            <label><input type="radio" name="optradio">Fyra</label>
-                          </div>
-                          <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Fem</label>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Slovenien<span class="text-muted"></span></h2>
-                        <p>Vad stämmer in på landet?</p>
-
-                        <div class="three_radios">
-                          <div class="radio">
-                            <label><input type="radio" name="optradio">Europas femte största land till ytan</label>
-                          </div>
-                          <div class="radio">
-                              <label><input type="radio" name="optradio">Europas trejde skogstätaste land</label>
-                          </div>
-                          <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Ca 50% av landet är skyddat som Natura 2000</label>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Ungern<span class="text-muted"></span></h2>
-                        <p>Vilken stor flod reser genom mer än bara Ungern?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                <label><input type="radio" name="optradio">Sava</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="optradio">Donau</label>
-                            </div>
-                            <div class="radio disabled">
-                                <label><input type="radio" name="optradio">Themsen</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Kroatien<span class="text-muted"></span></h2>
-                        <p>Vad heter landets högsta punkt?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                <label><input type="radio" name="optradio">Triglav</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="optradio">Maglic</label>
-                            </div>
-                            <div class="radio disabled">
-                                <label><input type="radio" name="optradio">Dinara</label>
-                            </div>
-                            </div>
-                    </div>
-                  </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Bosnien och Hercegovina<span class="text-muted"></span></h2>
-                        <p>Vad stämmer <em>inte</em> överrens med landet?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Landets kustlinje är 24 kilometer lång</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Landet är för det mesta bergigt och skogsklätt</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Landet är ett av Europas minsta länder</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Montenegro<span class="text-muted"></span></h2>
-                        <p>Vilken sjö delas mellan Montenegro och Albanien?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Tarasjön</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Skodersjön</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Lim</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Albanien<span class="text-muted"></span></h2>
-                        <p>Vilket sorts klimat råder vid landets kust?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Kontinentalt klimat</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Inlandsklimat</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Medelhavsklimat</label>
-                            </div>
-                            </div>
-                      </div>
-                  </div>
-              </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Serbien<span class="text-muted"></span></h2>
-                        <p>Vilket språk är landets officiella språk?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Engelska</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Serbiska</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Albanska</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-          <hr class="featurette-divider">
-              <form>
-                  <div class="row featurette">
-                      <div class="col-md-7">
-                          <h2 class="featurette-heading">Grekland<span class="text-muted"></span></h2>
-                          <p>Vad är vanligt i vissa delar av landet?</p>
-
-                              <div class="three_radios">
-                              <div class="radio">
-                                    <label><input type="radio" name="optradio">Torka</label>
-                              </div>
-                              <div class="radio">
-                                    <label><input type="radio" name="optradio">Extrema väderförhållanden</label>
-                              </div>
-                              <div class="radio disabled">
-                                    <label><input type="radio" name="optradio">Snö och is</label>
-                              </div>
-                              </div>
-                      </div>
-                  </div>
-              </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Bulgarien<span class="text-muted"></span></h2>
-                        <p>Vad heter huvudstaden?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Sofia</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="optradio">Anna</label>
-                            </div>
-                            <div class="radio disabled">
-                                <label><input type="radio" name="optradio">Henrik</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Makedonien<span class="text-muted"></span></h2>
-                        <p>Vad heter landets längsta flod?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Ohrid</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Vardar</label>
-
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Crna Reka</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Turkiet<span class="text-muted"></span></h2>
-                        <p>Vad stämmer in på det inre området i landet?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Inlandsklimat</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Medelhavsklimat</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Snö och is året om</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Malta<span class="text-muted"></span></h2>
-                        <p>Vad heter huvudstaden?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Mariette</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Valletta</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Nora</label>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">San Marino<span class="text-muted"></span></h2>
-                        <p>Vad heter huvudstaden?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Lasarote</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">San Marino</label>
-                            </div>
-                            <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Novaw</label>
-                            </div>
-                            </div>
-                  </div>
-              </div>
-          </form>
-
-        <!--fråga-->
-        <hr class="featurette-divider">
-            <form>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Vatikanstaden<span class="text-muted"></span></h2>
-                        <p>På vilken plats hamnar landet ytmässigt i Europa?</p>
-
-                            <div class="three_radios">
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Plats 43</label>
-                            </div>
-                            <div class="radio">
-                                  <label><input type="radio" name="optradio">Plats 56</label>
-                              </div>
-                              <div class="radio disabled">
-                                  <label><input type="radio" name="optradio">Plats 49</label>
-                              </div>
-                              </div>
-                    </div>
-                </div>
-            </form>
-        
-
-<!--Collapse-funktion, Facit-->
-                    <button class="collapsible">FACIT</button>
-                    <div class="content">
-                      <p><strong>LAND.</strong> RÄTT SVAR
-                      <br>
-                      <strong>Spanien:</strong> Kanarieöarna
-                      <br>
-                      <strong>Portugal:</strong> Ett av kontinentens varmaste länder
-                      <br>
-                      <strong>Italien:</strong> Över 60 miljoner
-                      <br>
-                      <strong>Österrike:</strong> Fem
-                      <br>
-                      <strong>Slovenien:</strong> Europas trejde skogstätaste land
-                      <br>
-                      <strong>Ungern:</strong> Donau
-                      <br>
-                      <strong>Kroatien:</strong> Dinara
-                      <br>
-                      <strong>Bosnien och Hercegovina:</strong> Landets kustlinje är 24 km lång
-                      <br>
-                      <strong>Montenegro:</strong> Skodersjön
-                      <br>
-                      <strong>Albanien:</strong> Medelhavsklimat
-                      <br>
-                      <strong>Serbien:</strong> Serbiska
-                      <br>
-                      <strong>Grekland:</strong> Snö och is
-                      <br>
-                      <strong>Bulgarien:</strong> Sofia
-                      <br>
-                      <strong>Makedonien:</strong> Vardar
-                      <br>
-                      <strong>Turkiet:</strong> Inlandsklimat
-                      <br>
-                      <strong>Malta:</strong> Valletta
-                      <br>
-                      <strong>San Marino:</strong> San Marino
-                      <br>
-                      <strong>Vatikanstaden:</strong> Plats 49</p>
-                    </div>
-
-
-          </div> <!--Container marketing-->
-      </main>
-
-      <!--Länk till nästa quiz-sida-->
-          <p class="float-right"><a href="east_quiz">Östra quiz!</a></p>
-
-
-
-            <!-- /.container -->
-            <!-- FOOTER -->
-            <footer class="container">
-                <hr class="featurette-divider">
-                <p class="float-right"><a href="south_quiz">Upp</a></p>
-                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </footer>
-    </main>
-
-
-
-
-
-    <!--JavaScript för Collapse-funktion-->
+            <p class="float-right"><a href="south_quiz">Upp</a></p>
+            <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+        <!--JavaScript för Collapse-funktion-->
         <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-      </script>
-    <!-- Bootstrap core JavaScript
-                            ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</body>
-
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
 </html>
