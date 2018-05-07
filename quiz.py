@@ -30,8 +30,26 @@ SELECT * FROM questions JOIN answers on answers.answersID=questions.QuestionID w
 def get_answers_north():
     db, cursor = connectDB()
     # Skickar iväg en fråga för att hämta alla svar från tabellen "answers"
-    sql = "SELECT right_answer, wrong_answer_1, wrong_answer_2 from answers join questions on answers.answersID=questions.questionID WHERE Area='{}'".format("Norra Europa")
+    sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Norra Europa")
     cursor.execute(sql)
     # Tar emot svaret, sparar det i variabeln "north"
     north_answers = cursor.fetchall()
+    print(north_answers)
     return north_answers
+
+def testq():
+    db, cursor = connectDB()
+    qid = "SELECT questionID from questions"
+    cursor.execute(qid)
+    testqtest = cursor.fetchall()
+    print(testqtest)
+
+def testa():
+    db, cursor = connectDB()
+    aid = "SELECT answersID from answers"
+    cursor.execute(aid)
+    testatest = cursor.fetchall()
+    print(testatest)
+
+
+

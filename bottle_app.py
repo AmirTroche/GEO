@@ -29,6 +29,8 @@ def get_south_facts():
 def get_north_quiz():
     north=quiz.get_quiz_north()
     north_answers=quiz.get_answers_north()
+    testq=quiz.testq()
+    testa=quiz.testa()
     return template('north_quiz',questions=north, answers=north_answers)
 
 @route('/east_quiz')
@@ -64,4 +66,4 @@ def server_static(filename):
     '''
     return static_file(filename, root="static")
 
-run(host='localhost', port=8050,reloader=True)
+run(host='localhost', port=8050, debug=True, reloader=True)
