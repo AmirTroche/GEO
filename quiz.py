@@ -24,10 +24,7 @@ def get_quiz_north():
     north = cursor.fetchall()
     return north
 
-'''Alternativ selectsats för att ta fram allt innehåll:
-SELECT * FROM questions JOIN answers on answers.answersID=questions.QuestionID where Area ='Norra Europa';'''
-
-def get_answers_north():
+'''def get_answers_north():
     db, cursor = connectDB()
     # Skickar iväg en fråga för att hämta alla svar från tabellen "answers"
     sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Norra Europa")
@@ -35,21 +32,8 @@ def get_answers_north():
     # Tar emot svaret, sparar det i variabeln "north"
     north_answers = cursor.fetchall()
     print(north_answers)
-    return north_answers
+    return north_answers'''
 
-def testq():
-    db, cursor = connectDB()
-    qid = "SELECT questionID from questions"
-    cursor.execute(qid)
-    testqtest = cursor.fetchall()
-    print(testqtest)
-
-def testa():
-    db, cursor = connectDB()
-    aid = "SELECT answersID from answers"
-    cursor.execute(aid)
-    testatest = cursor.fetchall()
-    print(testatest)
 
 
 

@@ -28,10 +28,8 @@ def get_south_facts():
 @route('/north_quiz')
 def get_north_quiz():
     north=quiz.get_quiz_north()
-    north_answers=quiz.get_answers_north()
-    testq=quiz.testq()
-    testa=quiz.testa()
-    return template('north_quiz',questions=north, answers=north_answers)
+    
+    return template('north_quiz',questions=north)
 
 @route('/east_quiz')
 def get_east_quiz():
