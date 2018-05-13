@@ -31,8 +31,6 @@ def get_north_quiz():
     
     return template('north_quiz',questions=north)
 
-@route('/save_data', method="POST")
-def save_data():
     
 
 

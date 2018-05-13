@@ -81,28 +81,25 @@
 
                            shuffle(answers)
                         %>
-<<<<<<< HEAD
+
                         
                         <form action="/save_data" method="post">
-=======
 
-                        <div>
->>>>>>> a9d5b7f40e13088ca384132939e08569c427b044
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>
 
                             % for answer in answers:
-                                <label><input type="radio" value="" name="optradio" data-correct="{{ answer["correct"] }}">{{ question[answer["column"]] }}</label>
+                                <label><input type="radio" value="{{ answer["correct"] }}" name="optradio" data-correct="{{ answer["correct"] }}" required >{{ question[answer["column"]] }}</label>
                             % end
-<<<<<<< HEAD
-                            <input type="submit" value="Skicka" class="btn btn-success">
+
+                            <input type="submit" value="Resultat" class="btn btn-success">
                         </form>
                      % end	 
-=======
 
-                        </div>
+
+                        
                      % end
->>>>>>> a9d5b7f40e13088ca384132939e08569c427b044
+
                     </div>
                 </div>
                 <!--Länk till nästa quiz-sida-->
