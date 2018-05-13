@@ -132,3 +132,9 @@ body{
     margin-right: 15px;
 }
 
+/*CSS för quiz */
+
+.quiz_div{
+  flex: 0 0 25%;
+  max-width: 40%;
+}
