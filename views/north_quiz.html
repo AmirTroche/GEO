@@ -82,15 +82,15 @@
                            shuffle(answers)                        
                         %>
                         
-                        <div>
+                        <form action="/save_data" method="post">
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>	
                             
                             % for answer in answers:
-                                <label><input type="radio" name="optradio" data-correct="{{ answer["correct"] }}">{{ question[answer["column"]] }}</label>
+                                <label><input type="radio" value="" name="optradio" data-correct="{{ answer["correct"] }}">{{ question[answer["column"]] }}</label>
                             % end
-                            
-                        </div>
+                            <input type="submit" value="Skicka" class="btn btn-success">
+                        </form>
                      % end	 
                     </div>
                 </div>
