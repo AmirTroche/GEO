@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="se-sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Your GEO</title>
-        <meta name="Author" content="Amir, Mirella, Viktoryia, Vilma">
-        <meta name="description" content="Geographic for kids">
-        <meta name="Keywords" content="Geografi,Lärande,Barn,Lärare,skolor">
-        <link rel="shortcut icon" href="/static/img/Logo.png" type="image/vnd.microsoft.icon">
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/static/css/main.css">
-    </head>
-    <body>
-        <header>
-            <!-- Navigation meny -->
-            <nav class="navigation navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="/"><img class="logo" src="/static/img/Logo.png" alt="Logotyp"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Läs På
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="north_facts">Norra Europa</a>
-                                <a class="dropdown-item" href="west_facts">Västra Europa</a>
-                                <a class="dropdown-item" href="south_facts">Södra Europa</a>
-                                <a class="dropdown-item" href="east_facts">Östra Europa</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Quiz
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="north_quiz">Norra Europa</a>
-                                <a class="dropdown-item" href="west_quiz">Västra Europa</a>
-                                <a class="dropdown-item" href="south_quiz">Södra Europa</a>
-                                <a class="dropdown-item" href="east_quiz">Östra Europa</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Kontakt</a>
-                        </li>
-                    </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Your GEO</title>
+    <meta content="Amir, Mirella, Viktoryia, Vilma" name="Author">
+    <meta content="Geographic for kids" name="description">
+    <meta content="Geografi,Lärande,Barn,Lärare,skolor" name="Keywords">
+    <link href="/static/img/Logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js">
+    </script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation meny -->
+        <nav class="navigation navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/"><img alt="Logotyp" class="logo" src="/static/img/Logo.png"></a>
+            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse"
+                data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">Läs På</a>
+                        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                            <a class="dropdown-item" href="north_facts">Norra Europa</a>
+                            <a class="dropdown-item" href="west_facts">Västra Europa</a>
+                            <a class="dropdown-item" href="south_facts">Södra Europa</a>
+                            <a class="dropdown-item" href="east_facts">Östra Europa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">Quiz</a>
+                        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                            <a class="dropdown-item" href="north_quiz">Norra Europa</a>
+                            <a class="dropdown-item" href="west_quiz">Västra Europa</a> 
+                            <a class="dropdown-item" href="south_quiz">Södra Europa</a>
+                            <a class="dropdown-item" href="east_quiz">Östra Europa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--=============== Main   =================-->
+    <main role="main">
+        <!-- /.container -->
+        <div class="container contactlist">
+            <h1>Kontakta oss!</h1><br>
+            <div class="row text-center">
+                <div class="col-sm-3 col-xs-6 first-box">
+                    <h1><span class="glyphicon glyphicon-earphone"></span></h1>
+                    <h3>Telefon</h3>
+                    <p>040-665 70 70</p><br>
                 </div>
-            </nav>
-        </header>
-        <!----------------- Main   ------------------->
-        <main role="main">
-            <!-- /.container -->
-            <div class="container contactlist">
-                <h1>Kontakta oss!</h1>
-                <br>
-                <div class="row text-center">
-                    <div class="col-sm-3 col-xs-6 first-box">
-                        <h1><span class="glyphicon glyphicon-earphone"></span></h1>
-                        <h3>Telefon</h3>
-                        <p>040-665 70 70</p>
-                        <br>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 second-box">
-                        <h1><span class="glyphicon glyphicon-home"></span></h1>
-                        <h3>Adress</h3>
-                        <p>Nordenskiöldsgatan 1, 211 19 Malmö</p>
-                        <br>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 third-box">
-                        <h1><span class="glyphicon glyphicon-send"></span></h1>
-                        <h3>E-mail</h3>
-                        <p><a href="mailto:yourgeo@outlook.com">yourgeo@outlook.com</a></p>
-                        <br>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 fourth-box">
-                        <h1><span class="glyphicon glyphicon-leaf"></span></h1>
-                        <h3>Web</h3>
-                        <p>www.yourGeo.se</p>
-                        <br>
-                    </div>
+                <div class="col-sm-3 col-xs-6 second-box">
+                    <h1><span class="glyphicon glyphicon-home"></span></h1>
+                    <h3>Adress</h3>
+                    <p>Nordenskiöldsgatan 1, 211 19 Malmö</p><br>
+                </div>
+                <div class="col-sm-3 col-xs-6 third-box">
+                    <h1><span class="glyphicon glyphicon-send"></span></h1>
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:yourgeo@outlook.com">yourgeo@outlook.com</a></p><br>
+                </div>
+                <div class="col-sm-3 col-xs-6 fourth-box">
+                    <h1><span class="glyphicon glyphicon-leaf"></span></h1>
+                    <h3>Web</h3>
+                    <p>www.yourGeo.se</p><br>
                 </div>
             </div>
-            <!-- FOOTER -->
-            <footer class="container footer">
-                <p class="float-right"><a href="contact">Upp</a></p>
-                <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </footer>
-        </main>
-        <!-- Bootstrap core JavaScript
+        </div>
+        <!-- FOOTER -->
+        <footer class="container footer">
+            <p class="float-right"><a href="contact">Upp</a></p>
+            <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+    <!-- Bootstrap core JavaScript
             ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-        <script src="/static/js/bootstrap.min.js"></script>
-    </body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
+    </script>
+    <script src="/static/js/bootstrap.min.js">
+    </script>
+</body>
+
 </html>
