@@ -1,7 +1,7 @@
 from bottle import run, route, template, request, static_file
 import quiz
 
-"""Returns main-page and fact- pages"""
+""" Hamtar Main & Fakta sidorna"""
 
 @route('/')
 def main():
@@ -23,39 +23,55 @@ def get_west_facts():
 def get_south_facts():
     return template('south_facts')
 
-"""Returns quiz- pages"""
+""" Hamtar Quiz"""
 
 @route('/north_quiz')
 def get_north_quiz():
     north=quiz.get_quiz_north()
+    
     return template('north_quiz',questions=north)
+
+    
+
 
 @route('/east_quiz')
 def get_east_quiz():
-    return template('east_quiz')
+    east=quiz.get_quiz_north()
+    
+    return template('east_quiz', questions=east)
 
 @route('/west_quiz')
 def get_west_quiz():
-    return template('west_quiz')
+    west=quiz.get_quiz_west()
+    
+    return template('west_quiz', questions=west)
 
 @route('/south_quiz')
 def get_south_quiz():
-    return template('south_quiz')
+    south=quiz.get_quiz_south()
+    
+    return template('south_quiz', questions=south)
 
-"""Returns contact- page"""
+
+""" Hamtar kontaktsidan"""
 
 @route('/contact')
 def contact():
     return template('contact')
 
 
+@route('/test')
+def test():
+    answer = request.query['answer']
+    print(answer)
+
 @route("/static/<filename:path>")
 def server_static(filename):
-    """Handles the routes to our static files
+    '''Handles the routes to our static files
 
     Returns:
             file : the static file requested by URL
-    """
+    '''
     return static_file(filename, root="static")
 
 run(host='localhost', port=8050, debug=True, reloader=True)
