@@ -88,16 +88,13 @@
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>
 
-                            % for answer in answers:
+							% for answer in answers:
                                 <label><input type="radio" value="{{ answer["correct"] }}" name="optradio" data-correct="{{ answer["correct"] }}" required >{{ question[answer["column"]] }}</label>
-                            % end
+							% end
 
-                            <input type="submit" value="Resultat" class="btn btn-success">
+							<input type="submit" value="Resultat" class="btn btn-success">
                         </form>
-                     % end
-
-
-
+                  
                      % end
 
                     </div>
