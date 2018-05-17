@@ -28,25 +28,21 @@ def get_south_facts():
 @route('/north_quiz')
 def get_north_quiz():
     north=quiz.get_quiz_north()
-    
     return template('north_quiz',questions=north)
 
 @route('/east_quiz')
 def get_east_quiz():
     east=quiz.get_quiz_north()
-    
     return template('east_quiz', questions=east)
 
 @route('/west_quiz')
 def get_west_quiz():
     west=quiz.get_quiz_west()
-    
     return template('west_quiz', questions=west)
 
 @route('/south_quiz')
 def get_south_quiz():
     south=quiz.get_quiz_south()
-    
     return template('south_quiz', questions=south)
 
 
@@ -60,7 +56,6 @@ def contact():
 
 @route("/static/<filename:path>")
 def server_static(filename):
-    
     return static_file(filename, root="static")
 
 run(host='localhost', port=8050, debug=True, reloader=True)

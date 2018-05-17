@@ -8,17 +8,17 @@ def connectDB():
                          passwd="",
                          db="yourgeo",
                          cursorclass=pymysql.cursors.DictCursor)
-    
+
     """Creates a cursor for the database"""
     cursor = db.cursor()
     return db, cursor
-                      
+
 
 def get_quiz_north():
     db, cursor = connectDB()
     """Sends a question to get all questions from the table "questions"""
     sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Norra Europa")
-    
+
     cursor.execute(sql)
     """Recieves answer, saves it in the variable "north"""
     north = cursor.fetchall()
@@ -29,7 +29,7 @@ def get_quiz_east():
     db, cursor = connectDB()
     """Sends a question to get all questions from the table "questions"""
     sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Östra Europa")
-    
+
     cursor.execute(sql)
     """Recieves answer, saves it in the variable "east"""
     east = cursor.fetchall()
@@ -40,7 +40,7 @@ def get_quiz_west():
     db, cursor = connectDB()
     """Sends a question to get all questions from the table "questions"""
     sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Västra Europa")
-    
+
     cursor.execute(sql)
     """Recieves answer, saves it in the variable "west"""
     west = cursor.fetchall()
@@ -50,15 +50,9 @@ def get_quiz_west():
 def get_quiz_south():
     db, cursor = connectDB()
     """Sends a question to get all questions from the table "questions"""
-    sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("South Europa")
-    
+    sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Södra Europa")
+
     cursor.execute(sql)
     """Recieves answer, saves it in the variable "south"""
     south = cursor.fetchall()
     return south
-
-
-
-
-
-
