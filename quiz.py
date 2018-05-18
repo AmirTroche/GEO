@@ -13,6 +13,13 @@ def connectDB():
     cursor = db.cursor()
     return db, cursor
 
+def grade_question(answer, questionid):
+    count_result()
+    sql2 = "SELECT right_answer from answers join questions on questions.questionID=answers.answersID WHERE QuestionID = answersID and right_answer = '{}'".format(answer) 
+    cursor.execute(sql2)
+    result = cursor.fetchall()
+    print(len(result))
+ 
 
 def get_quiz_north():
     db, cursor = connectDB()

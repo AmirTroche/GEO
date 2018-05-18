@@ -1,4 +1,4 @@
-from bottle import run, route, template, request, static_file
+from bottle import run, route, template, request, static_file, post, redirect
 import quiz
 
 """Returns main-page and fact- pages"""
@@ -30,6 +30,21 @@ def get_north_quiz():
     north=quiz.get_quiz_north()
     return template('north_quiz',questions=north)
 
+
+
+
+@route('/count_result', method="POST")
+def count_result():
+    for questionid in request.forms:
+        answer = request.forms[questionid]
+        real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
+        return answer
+        return questionid
+        
+        
+    
+    
+       
 @route('/east_quiz')
 def get_east_quiz():
     east=quiz.get_quiz_east()
