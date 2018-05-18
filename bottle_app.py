@@ -30,19 +30,21 @@ def get_north_quiz():
     north=quiz.get_quiz_north()
     return template('north_quiz',questions=north)
 
-<<<<<<< HEAD
+
 
 
 @route('/count_result', method="POST")
 def count_result():
-    answer = request.form.get['answer']
+    for questionid in request.forms:
+        answer = request.forms[questionid]
+        real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
+        return answer
+        return questionid
+        
+        
     
     
        
-
-
-=======
->>>>>>> 095945b589c80f5655c2a051b8c077b1eb34d7ca
 @route('/east_quiz')
 def get_east_quiz():
     east=quiz.get_quiz_north()

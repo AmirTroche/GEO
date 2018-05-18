@@ -78,36 +78,22 @@
                            shuffle(answers)
                         %>
 
-<<<<<<< HEAD
                         
-                        
-=======
-                        <form action="/save_data" method="post">
->>>>>>> 095945b589c80f5655c2a051b8c077b1eb34d7ca
-
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>
 
-<<<<<<< HEAD
+
                             % for answer in answers:
-                                <label><input type="radio" value="{{ question[answer] }}" name="{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label>
+                                <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
                             % end
-
                             
-                        
-=======
-							% for answer in answers:
-                                <label><input type="radio" value="{{ answer["correct"] }}" name="optradio" data-correct="{{ answer["correct"] }}" required >{{ question[answer["column"]] }}</label>
-							% end
+                     </div>
 
-							<input type="submit" value="Resultat" class="btn btn-success">
-                        </form>
-
->>>>>>> 095945b589c80f5655c2a051b8c077b1eb34d7ca
                      % end
-                            <input type="submit" value="Resultat" class="btn btn-success">        
+                            <input type="submit" value="Resultat" class="btn btn-success"> 
+                    
                     </form>
-                    </div>
+                    
                 </div>
                     
                    <!-- <form action="/update/" method="POST">
