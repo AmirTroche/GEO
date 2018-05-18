@@ -1,3 +1,6 @@
+<%
+   from random import shuffle
+%>
 <!DOCTYPE html>
 <html lang="se-sv">
     <head>
@@ -22,7 +25,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/">Hem <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
@@ -48,227 +51,53 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="contact">Kontakt</a>
+                            <a class="nav-link" href="contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <!----------------- Östra europa quiz container   ------------------->
-        <main role="main">
+		<!--Slut på navigation-->
+                <main role="main">
             <div class="background-container">
                 <div class="container marketing">
                     <h1 class="display-2">Östra Europa</h1>
                     <hr class="featurette-divider">
-                    <!--fråga-->
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Ukraina<span class="text-muted"></span></h2>
-                                <p>Vad är landets viktiga exportvara?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Jordbruk</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Skog</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Vatten</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Polen<span class="text-muted"></span></h2>
-                                <p>Vad heter huvudstaden?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Warszawa</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Zakopane</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Sopot</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Slovakien<span class="text-muted"></span></h2>
-                                <p>Hur många invånare hade landet, ungefär, 2009?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Ca 4 miljoner</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Ca 0,5 miljoner</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Ca 5 miljoner</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Rumänien<span class="text-muted"></span></h2>
-                                <p>Vilken lång flod är landets längsta flod?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Donau</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Axios</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Sava</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Moldavien<span class="text-muted"></span></h2>
-                                <p>Vilken av följande är inte en av landets storodlingsvaror?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Vin</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Frukt</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Grönsaker</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Vitryssland<span class="text-muted"></span></h2>
-                                <p>Vad heter landets huvudstad?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Munk</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Minsk</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Levala</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Kosovo<span class="text-muted"></span></h2>
-                                <p>Vilken är <em>inte</em> en av landets officiella språk?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Azerbajdzjanska</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Albanska</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Serbiska</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Azerbajdzjan<span class="text-muted"></span></h2>
-                                <p>Vilket av följande klimat råder <em>inte</em> i landet?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Stäppklimat</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Inlandsklimat</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Subtropiskt</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Georgien<span class="text-muted"></span></h2>
-                                <p>Vilket hav har landet kust mot?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Medelhavet</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">Röda havet</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">Svart havet</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!--fråga-->
-                    <hr class="featurette-divider">
-                    <form>
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">Kazakstan<span class="text-muted"></span></h2>
-                                <p>Hur många kilometer skiljer mellan Sveriges sydligaste och Kazakstans nordligaste punkt?</p>
-                                <div class="three_radios">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">18 kilometer</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio">80 kilometer</label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label><input type="radio" name="optradio">26 kilometer</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    % for question in questions:
+                    <div class="quiz_div">
+                        <%
+                            # Python code! Shuffle the answers!
+                           answers = [{
+                            "column": "right_answer",
+                            "correct": 1
+                           },{
+                            "column": "wrong_answer_1",
+                            "correct": 0
+
+                           },{
+                           "column": "wrong_answer_2",
+                            "correct": 0
+                           }]
+
+                           shuffle(answers)
+                        %>
+
+                        <form action="/save_data" method="post">
+
+                            <h2>{{ question['Country'] }}</h2>
+                            <p class="title">{{ question['Question'] }}</p>
+
+							% for answer in answers:
+                                <label><input type="radio" value="{{ answer["correct"] }}" name="optradio" data-correct="{{ answer["correct"] }}" required >{{ question[answer["column"]] }}</label>
+							% end
+
+							<input type="submit" value="Resultat" class="btn btn-success">
+                        </form>
+
+                     % end
+
+                    </div>
+                </div>
                     <!--Länk till nästa quiz-sida-->
                     <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
                 </div>
@@ -309,7 +138,7 @@
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-            
+
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");

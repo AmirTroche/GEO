@@ -29,20 +29,19 @@
   }
 
   function _defineProperty(obj, key, value) {
-    if (key in obj) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
+     if (key in obj) {
+         Object.defineProperty(obj, key, {
+             value: value,
+             enumerable: true,
+             configurable: true,
+             writable: true
+         });
+     } else {
+         obj[key] = value;
+     }
 
-    return obj;
-  }
-
+     return obj;
+ }
   function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i] != null ? arguments[i] : {};
@@ -224,14 +223,14 @@
       DISMISS: '[data-dismiss="alert"]'
     };
     var Event = {
-      CLOSE: "close" + EVENT_KEY,
-      CLOSED: "closed" + EVENT_KEY,
-      CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
+        CLOSE: "close" + EVENT_KEY,
+        CLOSED: "closed" + EVENT_KEY,
+        CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
     };
     var ClassName = {
-      ALERT: 'alert',
-      FADE: 'fade',
-      SHOW: 'show'
+            ALERT: 'alert',
+            FADE: 'fade',
+            SHOW: 'show'
       /**
        * ------------------------------------------------------------------------
        * Class Definition

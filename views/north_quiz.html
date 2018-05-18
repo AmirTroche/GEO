@@ -25,11 +25,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/">Hem<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Läs På
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -40,7 +40,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -51,7 +51,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="contact">Kontakt</a>
+                            <a class="nav-link" href="contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -78,18 +78,32 @@
                            shuffle(answers)
                         %>
 
+<<<<<<< HEAD
                         
                         
+=======
+                        <form action="/save_data" method="post">
+>>>>>>> 095945b589c80f5655c2a051b8c077b1eb34d7ca
 
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>
 
+<<<<<<< HEAD
                             % for answer in answers:
                                 <label><input type="radio" value="{{ question[answer] }}" name="{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label>
                             % end
 
                             
                         
+=======
+							% for answer in answers:
+                                <label><input type="radio" value="{{ answer["correct"] }}" name="optradio" data-correct="{{ answer["correct"] }}" required >{{ question[answer["column"]] }}</label>
+							% end
+
+							<input type="submit" value="Resultat" class="btn btn-success">
+                        </form>
+
+>>>>>>> 095945b589c80f5655c2a051b8c077b1eb34d7ca
                      % end
                             <input type="submit" value="Resultat" class="btn btn-success">        
                     </form>
@@ -126,5 +140,31 @@
             <p class="float-right"><a href="north_quiz">Upp</a></p>
             <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
+		<!--JavaScript för Collapse-funktion-->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>
