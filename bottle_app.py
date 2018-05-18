@@ -1,4 +1,4 @@
-from bottle import run, route, template, request, static_file
+from bottle import run, route, template, request, static_file, post, redirect
 import quiz
 
 """ Hamtar Main & Fakta sidorna"""
@@ -31,7 +31,14 @@ def get_north_quiz():
     
     return template('north_quiz',questions=north)
 
+
+
+@route('/count_result', method="POST")
+def count_result():
+    answer = request.form.get['answer']
     
+    
+       
 
 
 @route('/east_quiz')
