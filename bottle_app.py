@@ -1,7 +1,7 @@
 from bottle import run, route, template, request, static_file, post, redirect
 import quiz
 
-"""Returns main-page and fact- pages"""
+"""Returnerar Main och fakta sidan"""
 
 @route('/')
 def main():
@@ -23,7 +23,7 @@ def get_west_facts():
 def get_south_facts():
     return template('south_facts')
 
-"""Returns quiz- pages"""
+"""Retunerar quiz sidorna"""
 
 @route('/north_quiz')
 def get_north_quiz():
@@ -31,10 +31,10 @@ def get_north_quiz():
     return template('north_quiz',questions=north)
 
 
-
-
 @route('/count_result', method="POST")
+"""Resultat funktion"""
 def count_result():
+    """Hämtar data från html"""
     for questionid in request.forms:
         answer = request.forms[questionid]
         real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
@@ -47,7 +47,7 @@ def count_result():
        
 @route('/east_quiz')
 def get_east_quiz():
-    east=quiz.get_quiz_east()
+    east=quiz.get_quiz_north()
     return template('east_quiz', questions=east)
 
 @route('/west_quiz')
@@ -61,14 +61,14 @@ def get_south_quiz():
     return template('south_quiz', questions=south)
 
 
-"""Returns contact- page"""
+"""Retunerar kontaktsidan"""
 
 @route('/contact')
 def contact():
     return template('contact')
 
-'''Handles the routes to our static files. Returns: file : the static file requested by URL'''
-
+'''Tar handom routes för våra statiska filer. Retunerar: Filen : 
+den begärda statiska filen av URL'''
 @route("/static/<filename:path>")
 def server_static(filename):
     return static_file(filename, root="static")
