@@ -3,12 +3,12 @@ body{
     background: url(../Img/orangewall.jpg)
 }
 
-/* ---Logotyp på navbar--- */
+/* ---Logotyp on navbar--- */
 .logo{
     width: 70px;
 }
 
-/* ---Sektion 1 startsidan--- */
+/* ---Section 1 startpage--- */
 
 .carousel-inner img{
     width: 45%;
@@ -24,7 +24,7 @@ body{
     margin-top: 8%;
 }
 
-/* ---Bild på barnen--- */
+/* ---Photo on kids--- */
 
 .carousel-inner h1{
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
@@ -34,12 +34,12 @@ body{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-/* ---Sektion 2 startsidan--- */
+/* ---Section 2 startpage--- */
 .section2{
     margin-left: 10%;
 }
 
-/* ---Sektion 3 startsidan--- */
+/* ---Section 3 firstpage--- */
 
 .eu-pic{
     border-radius: 15px;
@@ -51,9 +51,9 @@ body{
 
 
 
-/* ---Alla fakta sidor--- */
+/* ---All _facts pages--- */
 
- /* ---Rubrik--- */
+ /* ---Headline--- */
 
 .display-2{
     margin-top: 20%;
@@ -64,7 +64,7 @@ body{
     height: 150px;
 }
 
- /* ---Kontakt sidan--- */
+ /* ---Contact page--- */
 .contactlist{
     margin-top: 17%;
     margin-bottom: 20%;
@@ -115,7 +115,7 @@ body{
     background-color: #F5F5F5;
 }
 
-/* ---Behållare för quiz--- */
+/* ---Container for quiz--- */
 
 .background-container{
     width: 80%;
@@ -131,7 +131,7 @@ body{
     margin-right: 15px;
 }
 
-/* ---CSS för quiz--- */
+/* ---CSS for quiz--- */
 
 .quiz_div{
     flex: 0 0 25%;
