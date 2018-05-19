@@ -3,6 +3,10 @@ body{
     background: url(../Img/orangewall.jpg)
 }
 
+main{
+  margin-top: 100px;
+}
+
 /* ---Logotyp on navbar--- */
 .logo{
     width: 70px;
