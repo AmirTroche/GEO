@@ -47,7 +47,7 @@ def count_result():
        
 @route('/east_quiz')
 def get_east_quiz():
-    east=quiz.get_quiz_north()
+    east=quiz.get_quiz_east()
     return template('east_quiz', questions=east)
 
 @route('/west_quiz')
