@@ -19,7 +19,7 @@ main{
 
 /* ---Photo on kids--- */
 .img-kid{
-  position: absolute;
+  position: block;
   top: 50%;
   left: 50%;
   /*margin-left: auto;
