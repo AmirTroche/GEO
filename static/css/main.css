@@ -13,40 +13,22 @@ main{
 }
 
 /* ---Section 1 startpage--- */
-
-
-
 .homepage{
     margin-top: 8%;
 }
 
 /* ---Photo on kids--- */
-
-.img-text img{
-    width: 45%;
-    height: ;
-    margin-top: 10%;
-    margin-left: 14%;
-    margin-right: auto;
-    border-radius: 15px;
-
+.img-kids{
+  margin: auto;
 }
-/*.img-text {
+
+.img-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}*/
-
-
-
-/*.carousel-inner h1{
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
-.carousel-inner p{
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}*/
 
 /* ---Section 2 startpage--- */
 .section2{
