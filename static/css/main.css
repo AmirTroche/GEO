@@ -20,12 +20,12 @@ main{
 /* ---Photo on kids--- */
 .img-kids{
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   display: block;
 
 }
 
-.img-text {
+.img-kid img-text{
     position: absolute;
     top: 50%;
     left: 50%;
