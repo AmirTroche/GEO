@@ -14,7 +14,15 @@ main{
 
 /* ---Section 1 startpage--- */
 
-.carousel-inner img{
+
+
+.homepage{
+    margin-top: 8%;
+}
+
+/* ---Photo on kids--- */
+
+.img-text img{
     width: 45%;
     height: ;
     margin-top: 10%;
@@ -23,19 +31,12 @@ main{
     border-radius: 15px;
 
 }
-
-.homepage{
-    margin-top: 8%;
-}
-
-/* ---Photo on kids--- */
-
-.img-text {
+/*.img-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 
 
