@@ -1,6 +1,6 @@
 <%
-   from random import shuffle
-%>
+    from random import shuffle
+    %>
 <!DOCTYPE html>
 <html lang="se-sv">
     <head>
@@ -63,43 +63,31 @@
                 <div class="container marketing">
                     <h1 class="display-2">Norra Europa</h1>
                     <hr class="featurette-divider">
-                    
+                    <!-- Quiz funktionen slumpa och rätta -->
                     <form action="/count_result" method="post">
-                    % for question in questions:
-                    <div class="quiz_div">
-                        <%
-                            # Python code! Shuffle the answers!
-                           answers = [
-                            "right_answer",
-                            "wrong_answer_1",
-                            "wrong_answer_2"
-                           ]
-
-                           shuffle(answers)
-                        %>
-
-                        
+                        <!-- Python kod -->    
+                        % for question in questions:
+                        <div class="quiz_div">
+                            <%
+                                # Python code! Shuffle the answers!
+                                answers = [
+                                "right_answer",
+                                "wrong_answer_1",
+                                "wrong_answer_2"
+                                ]
+                                
+                                shuffle(answers)
+                                %>
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>
-
-
                             % for answer in answers:
-                                <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
+                            <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
                             % end
-                            
-                     </div>
-
-                     % end
-                            <input type="submit" value="Resultat" class="btn btn-success"> 
-                    
+                        </div>
+                        % end
+                        <input type="submit" value="Resultat" class="btn btn-success"> 
                     </form>
-                    
                 </div>
-                    
-                   <!-- <form action="/update/" method="POST">
-                        <input type="submit" value="Spara">
-                    </form>
-                    
                 <!--Länk till nästa quiz-sida-->
                 <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
             </div>
@@ -126,11 +114,11 @@
             <p class="float-right"><a href="north_quiz">Upp</a></p>
             <p>&copy; 2017-2018 YourGeo, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
-		<!--JavaScript för Collapse-funktion-->
+        <!--JavaScript för Collapse-funktion-->
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-
+            
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");
@@ -145,7 +133,7 @@
         </script>
         <!-- Bootstrap core JavaScript
             ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- Placerad i slutet för att sidan ska laddas snabbare -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script>
             window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')

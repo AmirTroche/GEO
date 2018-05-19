@@ -19,7 +19,7 @@ def grade_question(answer, questionid):
     cursor.execute(sql2)
     result = cursor.fetchall()
     print(len(result))
- 
+    
 
 def get_quiz_north():
     db, cursor = connectDB()
