@@ -32,7 +32,7 @@ def get_north_quiz():
 
 
 @route('/count_result', method="POST")
-"""Resultat funktion"""
+# Resultat funktion
 def count_result():
     """Hämtar data från html"""
     for questionid in request.forms:

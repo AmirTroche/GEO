@@ -21,9 +21,9 @@ def grade_question(answer, questionidreal_question_id):
     sql2 = "SELECT right_answer from answers join questions on questions.questionID=answers.answersID WHERE QuestionID = answersID and right_answer = '{}'".format(answer)
     """Kör select satsen"""
     cursor.execute(sql2)
-    """Hämtar all data och sparar det i variabeln "resultat""""
+    """Hämtar all data och sparar det i variabeln "resultat"""
     result = cursor.fetchall()
-    print(len(result))
+    len(result)
     
 
 def get_quiz_north():
@@ -32,7 +32,7 @@ def get_quiz_north():
     sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Norra Europa")
 
     cursor.execute(sql)
-    """Får svar och sparar den i variablen "north"""
+     #Får svar och sparar den i variablen "north"
     north = cursor.fetchall()
     return north
 
@@ -65,6 +65,6 @@ def get_quiz_south():
     sql = "SELECT * from answers join questions on questions.questionID=answers.answersID WHERE Area='{}'".format("Södra Europa")
 
     cursor.execute(sql)
-     """Får svar och sparar den i variablen "South"""
+     #Får svar och sparar den i variablen "South"
     south = cursor.fetchall()
     return south
