@@ -40,11 +40,8 @@ def count_result():
         real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
         return answer
         return questionid
-        
-        
-    
-    
-       
+
+
 @route('/east_quiz')
 def get_east_quiz():
     east=quiz.get_quiz_north()
@@ -67,7 +64,7 @@ def get_south_quiz():
 def contact():
     return template('contact')
 
-'''Tar handom routes för våra statiska filer. Retunerar: Filen : 
+'''Tar handom routes för våra statiska filer. Retunerar: Filen :
 den begärda statiska filen av URL'''
 @route("/static/<filename:path>")
 def server_static(filename):

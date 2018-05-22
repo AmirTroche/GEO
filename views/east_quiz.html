@@ -62,43 +62,35 @@
                 <div class="container marketing">
                     <h1 class="display-2">Östra Europa</h1>
                     <!-- Quiz funktionen slumpa och rätta -->
-                    <hr class="featurette-divider">
+                    <form action="/count_result" method="post">
                     <!-- Python kod -->
                     % for question in questions:
                     <div class="quiz_div">
                         <%
                             # Python code! Shuffle the answers!
-                            answers = [{
-                            "column": "right_answer",
-                            "correct": 1
-                            },{
-                            "column": "wrong_answer_1",
-                            "correct": 0
-
-                            },{
-                            "column": "wrong_answer_2",
-                            "correct": 0
-                            }]
+                            answers = [
+                            "right_answer",
+                            "wrong_answer_1",
+                            "wrong_answer_2"
+                            ]
 
                             shuffle(answers)
                             %>
-                        <form action="/save_data" method="post">
-                            <h2>{{ question['Country'] }}</h2>
-                            <p class="title">{{ question['Question'] }}</p>
-                            % for answer in answers:
-                            <label><input type="radio" value="{{ answer["correct"] }}" name="optradio" data-correct="{{ answer["correct"] }}" required >{{ question[answer["column"]] }}</label>
-                            % end
-                            <input type="submit" value="Resultat" class="btn btn-success">
-                        </form>
+                        <h2>{{ question['Country'] }}</h2>
+                        <p class="title">{{ question['Question'] }}</p>
+                        % for answer in answers:
+                        <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
                         % end
                     </div>
-                </div>
+                    % end
+                    <input type="submit" value="Resultat" class="btn btn-success">
+                </form>
+            </div>
                 <!--Länk till nästa quiz-sida-->
                 <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
-            </div>
             <!--Collapse-funktion, Facit-->
             <button class="btn btn-primary btn-lg collapsible">FACIT</button>
-            <div class="content">
+            <div id="demo" class="collapse">
                 <p><strong>LAND.</strong> RÄTT SVAR
                     <br>
                     <strong>Ukraina:</strong> Jordbruk
