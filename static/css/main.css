@@ -136,3 +136,9 @@ main{
     flex: 0 0 25%;
     max-width: 40%;
 }
+
+/* ---Footer--- */
+
+#quiz-link{
+  margin-right: 3px;
+}
