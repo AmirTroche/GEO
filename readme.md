@@ -1,47 +1,47 @@
 # YourGEO
 
-## Things you need before using our product
+## Saker du behöver göra innan du använder vår produkt
 
-1. You need to have one of the lastest version of python to run our code. 
-   Download link: [https://www.python.org/download/releases/](https://www.python.org/download/releases/)
+1. Du måste ha nedladdad senaste version av python för att köra vår kod.
+   Ladda ner här: [https://www.python.org/download/releases/](https://www.python.org/download/releases/)
 
-2. To use our product you need to install bottle and pymysql
+2. För att använda vår produkt måste du ladda ner bottle och pymysql
 
-3. Start with opening your terminal and install bottle by typing:
+3. Börja med att öppna din terminal och installera bottle genom att skriva:
 ```bash
 py -m pip install bottle
 ```
 
-3. To install pymysql type:
+3. För att installera pymysql skriv:
 ```bash
 py -m pip install pymysql
 ```
 
-4. Now you should be ready to use our product!
+4. Nu kan du starta vår produkt!
 
 
-## How to open our product
+## Hur man startar igång vår produkt
 
-1. Start with downloading our repository from our github GEO
+1. Börja med att ladda ner vår produkt från github GEO
 ```bash
 git clone https://github.com/AmirTroche/GEO.git
 ```
 
-2. Open the terminal but navigate to the project folder (GEO)
+2. Öppna terminalen men navigera till projekt mappen (GEO)
 
-3. Run bottle by typing:
+
+3. Kör bottle genom att skriva på terminalen:
 ```bash
 py bottle_app.py
 ```
-   (If the command is not found, try to write python3 in front)     
+   (Om kommandon är inte tillgänlig, testa skriva python3 först och sedan ovanstående)     
 
-4. You should get a link that looks like this http//localhost:8080/
+4. Du borde få en länk som följande: http//localhost:8080/
 
-5. Copy that and run it in your browser.
+5. Kopiera länken och klistra det på din webbläsare.
 
-6. Done!
+6. Klart!
 
-Thanks! 
+Tack!
 
 Team YourGeo
-
