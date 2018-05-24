@@ -177,3 +177,9 @@ main{
     flex: 0 0 25%;
     max-width: 40%;
 }
+
+/* ---Footer--- */
+
+.float-right{
+  padding: 10px;
+}

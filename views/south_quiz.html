@@ -40,7 +40,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quiz
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -63,6 +63,7 @@
                 <div class="container marketing">
                     <h1 class="display-2">Södra Europa</h1>
                     <hr class="featurette-divider">
+<<<<<<< HEAD
                     <!-- Quiz funktionen slumpa och rätta -->
                     <form action="/count_result" method="post">
                         <!-- Python kod -->
@@ -88,11 +89,36 @@
                         <input type="submit" value="Resultat" class="btn btn-success button2">    
                     </form>
                 </div>
+=======
+                    <!-- Python kod -->
+                    % for question in questions:
+                    <div class="quiz_div">
+                        <%
+                            # Python code! Shuffle the answers!
+                            answers = [
+                            "right_answer",
+                            "wrong_answer_1",
+                            "wrong_answer_2"
+                            ]
+
+                            shuffle(answers)
+                            %>
+                        <h2>{{ question['Country'] }}</h2>
+                        <p class="title">{{ question['Question'] }}</p>
+                        % for answer in answers:
+                        <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
+                        % end
+                    </div>
+                    % end
+                    <input type="submit" value="Resultat" class="btn btn-success">
+                </form>
+            </div>
+>>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
                 <!--Länk till nästa quiz-sida-->
                 <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
             <!--Collapse-funktion, Facit-->
             <button class="btn btn-primary btn-lg collapsible">FACIT</button>
-            <div class="content">
+            <div id="demo" class="collapse">
                 <p><strong>LAND.</strong> RÄTT SVAR
                     <br>
                     <strong>Spanien:</strong> Kanarieöarna
