@@ -81,11 +81,11 @@
                             <h2>{{ question['Country'] }}</h2>
                             <p class="title">{{ question['Question'] }}</p>
                             % for answer in answers:
-                            <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
+                            <label><input type="radio" value="{{ question[answer] }}" name="q{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
                             % end
                         </div>
-                        % end
-                        <input type="submit" value="Resultat" class="btn btn-success">
+                        % end    
+                        <input type="submit" value="Resultat" class="btn btn-success button2">    
                     </form>
                 </div>
                 <!--Länk till nästa quiz-sida-->
@@ -138,7 +138,7 @@
                         content.style.display = "block";
                     }
                 });
-            }
+             
         </script>
         <!-- Bootstrap core JavaScript
             ================================================== -->

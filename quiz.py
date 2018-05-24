@@ -1,6 +1,5 @@
 import pymysql
 
-
 def connectDB():
     """Ansluter till databas"""
     db = pymysql.connect(host="localhost",
@@ -14,16 +13,19 @@ def connectDB():
     return db, cursor
 
     
-def grade_question(answer, questionidreal_question_id):
+def grade_question(answer, real_question_id):
     """Funktion som räknar antal rätt i quiz"""
-    count_result()
+    db, cursor = connectDB()
     """skickar en fråga för att hämta fråga och svar som hör ihop och det rätta svaret från tabellen "right_answer"""
-    sql2 = "SELECT right_answer from answers join questions on questions.questionID=answers.answersID WHERE QuestionID = answersID and right_answer = '{}'".format(answer)
+    sql2 = "SELECT right_answer from answers join questions on questions.questionID=answers.answersID WHERE QuestionID = '{}' and right_answer = '{}'".format(real_question_id, answer)
     """Kör select satsen"""
     cursor.execute(sql2)
     """Hämtar all data och sparar det i variabeln "resultat"""
     result = cursor.fetchall()
-    len(result)
+    show_result=len(result)
+    return show_result
+    
+    
     
 
 def get_quiz_north():

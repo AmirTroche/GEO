@@ -34,20 +34,26 @@ def get_north_quiz():
 @route('/count_result', method="POST")
 # Resultat funktion
 def count_result():
-    """Hämtar data från html"""
+    result = 0
+    question = 0
+    # Hämtar alla frågor från formuläret
     for questionid in request.forms:
+        question = question +1 #Räknar antal frågor
         answer = request.forms[questionid]
         real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
-        return answer
-        return questionid
-        
-        
+        #Kör grade_ question funktionen som jämför med databasen
+        quiz.grade_question(answer,real_question_id)
+        if quiz.grade_question(answer,real_question_id) == 1:
+            #om rätt svar
+            result = result +1
+            #lägg till 1 på resultat           
     
-    
+    return template('result', result=result, question = question)
+        
        
 @route('/east_quiz')
 def get_east_quiz():
-    east=quiz.get_quiz_north()
+    east=quiz.get_quiz_east()
     return template('east_quiz', questions=east)
 
 @route('/west_quiz')
@@ -66,6 +72,12 @@ def get_south_quiz():
 @route('/contact')
 def contact():
     return template('contact')
+
+"""Retunerar resultatsidan"""
+@route('/result')
+def contact():
+    return template('result')
+
 
 '''Tar handom routes för våra statiska filer. Retunerar: Filen : 
 den begärda statiska filen av URL'''
