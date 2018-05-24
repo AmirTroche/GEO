@@ -63,7 +63,6 @@
                 <div class="container marketing">
                     <h1 class="display-2">Södra Europa</h1>
                     <hr class="featurette-divider">
-<<<<<<< HEAD
                     <!-- Quiz funktionen slumpa och rätta -->
                     <form action="/count_result" method="post">
                         <!-- Python kod -->
@@ -85,11 +84,10 @@
                             <label><input type="radio" value="{{ question[answer] }}" name="q{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
                             % end
                         </div>
-                        % end    
-                        <input type="submit" value="Resultat" class="btn btn-success button2">    
+                        % end
+                        <input type="submit" value="Resultat" class="btn btn-success button2">
                     </form>
                 </div>
-=======
                     <!-- Python kod -->
                     % for question in questions:
                     <div class="quiz_div">
@@ -113,7 +111,6 @@
                     <input type="submit" value="Resultat" class="btn btn-success">
                 </form>
             </div>
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
                 <!--Länk till nästa quiz-sida-->
                 <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
             <!--Collapse-funktion, Facit-->
