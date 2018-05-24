@@ -64,31 +64,6 @@
                     <hr class="featurette-divider">
                     <!-- Quiz funktionen slumpa och rätta -->
                     <form action="/count_result" method="post">
-                        <!-- Python kod -->
-                        % for question in questions:
-                        <div class="quiz_div">
-                            <%
-                                # Python code! Shuffle the answers!
-                                answers = [
-                                "right_answer",
-                                "wrong_answer_1",
-                                "wrong_answer_2"
-                                ]
-
-                                shuffle(answers)
-                                %>
-                            <h2>{{ question['Country'] }}</h2>
-                            <p class="title">{{ question['Question'] }}</p>
-                            % for answer in answers:
-                            <label><input type="radio" value="{{ question[answer] }}" name="q{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
-                            % end
-                        </div>
-                        % end
-                        <input type="submit" value="Resultat" class="btn btn-success button2">
-                    </form>
-                </div>
-                    <!-- Quiz funktionen slumpa och rätta -->
-                    <form action="/count_result" method="post">
                     <!-- Python kod -->
                     % for question in questions:
                     <div class="quiz_div">
