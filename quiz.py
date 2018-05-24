@@ -12,13 +12,10 @@ def connectDB():
     cursor = db.cursor()
     return db, cursor
 
-<<<<<<< HEAD
+
     
 def grade_question(answer, real_question_id):
-=======
 
-def grade_question(answer, questionidreal_question_id):
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
     """Funktion som räknar antal rätt i quiz"""
     db, cursor = connectDB()
     """skickar en fråga för att hämta fråga och svar som hör ihop och det rätta svaret från tabellen "right_answer"""
@@ -27,16 +24,10 @@ def grade_question(answer, questionidreal_question_id):
     cursor.execute(sql2)
     """Hämtar all data och sparar det i variabeln "resultat"""
     result = cursor.fetchall()
-<<<<<<< HEAD
+    
     show_result=len(result)
     return show_result
     
-    
-    
-=======
-    len(result)
-
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
 
 def get_quiz_north():
     db, cursor = connectDB()

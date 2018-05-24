@@ -41,7 +41,6 @@ def count_result():
         question = question +1 #Räknar antal frågor
         answer = request.forms[questionid]
         real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
-<<<<<<< HEAD
         #Kör grade_ question funktionen som jämför med databasen
         quiz.grade_question(answer,real_question_id)
         if quiz.grade_question(answer,real_question_id) == 1:
@@ -51,13 +50,8 @@ def count_result():
     
     return template('result', result=result, question = question)
         
-       
-=======
-        return answer
-        return questionid
 
 
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
 @route('/east_quiz')
 def get_east_quiz():
     east=quiz.get_quiz_east()
@@ -80,18 +74,13 @@ def get_south_quiz():
 def contact():
     return template('contact')
 
-<<<<<<< HEAD
 """Retunerar resultatsidan"""
 @route('/result')
 def contact():
     return template('result')
 
 
-'''Tar handom routes för våra statiska filer. Retunerar: Filen : 
-=======
-'''Tar handom routes för våra statiska filer. Retunerar: Filen :
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
-den begärda statiska filen av URL'''
+'''Tar handom routes för våra statiska filer. Retunerar: Filen'''
 @route("/static/<filename:path>")
 def server_static(filename):
     return static_file(filename, root="static")
