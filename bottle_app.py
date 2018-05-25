@@ -37,16 +37,18 @@ def count_result():
     result = 0
     question = 0
     # Hämtar alla frågor från formuläret
-    for questionid in request.forms:
+    for questionid in request.forms:        
         question = question +1 #Räknar antal frågor
-        answer = request.forms[questionid]
+        answer = getattr(request.forms, questionid)
+
         real_question_id = questionid[1:] # Hämtar det riktigt id:t (t.ex. q2 blir 2, q15 blir 15, etc.)
         #Kör grade_ question funktionen som jämför med databasen
         quiz.grade_question(answer,real_question_id)
         if quiz.grade_question(answer,real_question_id) == 1:
             #om rätt svar
             result = result +1
-            #lägg till 1 på resultat           
+            #lägg till 1 på resultat
+
     
     return template('result', result=result, question = question)
         
