@@ -61,7 +61,6 @@
             <div class="background-container">
                 <div class="container marketing">
                     <h1 class="display-2">Östra Europa</h1>
-<<<<<<< HEAD
                     <hr class="featurette-divider">
                     <!-- Quiz funktionen slumpa och rätta -->
                     <form action="/count_result" method="post">
@@ -75,7 +74,7 @@
                                 "wrong_answer_1",
                                 "wrong_answer_2"
                                 ]
-
+                                
                                 shuffle(answers)
                                 %>
                             <h2>{{ question['Country'] }}</h2>
@@ -88,59 +87,30 @@
                         <input type="submit" value="Resultat" class="btn btn-success button2">    
                     </form>
                 </div>
-=======
-                    <!-- Quiz funktionen slumpa och rätta -->
-                    <form action="/count_result" method="post">
-                    <!-- Python kod -->
-                    % for question in questions:
-                    <div class="quiz_div">
-                        <%
-                            # Python code! Shuffle the answers!
-                            answers = [
-                            "right_answer",
-                            "wrong_answer_1",
-                            "wrong_answer_2"
-                            ]
-
-                            shuffle(answers)
-                            %>
-                        <h2>{{ question['Country'] }}</h2>
-                        <p class="title">{{ question['Question'] }}</p>
-                        % for answer in answers:
-                        <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
-                        % end
-                    </div>
-                    % end
-                    <input type="submit" value="Resultat" class="btn btn-success">
-                </form>
-            </div>
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
-                <!--Länk till nästa quiz-sida-->
-                <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
-            <!--Collapse-funktion, Facit-->
-            <button class="btn btn-primary btn-lg collapsible">FACIT</button>
-            <div id="demo" class="collapse">
-                <p><strong>LAND.</strong> RÄTT SVAR
-                    <br>
-                    <strong>Ukraina:</strong> Jordbruk
-                    <br>
-                    <strong>Polen:</strong> Warszawa
-                    <br>
-                    <strong>Slovakien:</strong> Ca 5 miljoner
-                    <br>
-                    <strong>Rumänien:</strong> Donau
-                    <br>
-                    <strong>Moldavien:</strong> Grönsaker
-                    <br>
-                    <strong>Vitryssland:</strong> Minsk
-                    <br>
-                    <strong>Kosovo:</strong> Albanska
-                    <br>
-                    <strong>Azerbajdzjan:</strong> Inlandsklimat
-                    <br>
-                    <strong>Georgien:</strong> Svarta havet
-                </p>
-            </div>
+                <!--Collapse-funktion, Facit-->
+                <button class="btn btn-primary btn-lg collapsible">FACIT</button>
+                <div id="demo" class="collapse">
+                    <p><strong>LAND.</strong> RÄTT SVAR
+                        <br>
+                        <strong>Ukraina:</strong> Jordbruk
+                        <br>
+                        <strong>Polen:</strong> Warszawa
+                        <br>
+                        <strong>Slovakien:</strong> Ca 5 miljoner
+                        <br>
+                        <strong>Rumänien:</strong> Donau
+                        <br>
+                        <strong>Moldavien:</strong> Grönsaker
+                        <br>
+                        <strong>Vitryssland:</strong> Minsk
+                        <br>
+                        <strong>Kosovo:</strong> Albanska
+                        <br>
+                        <strong>Azerbajdzjan:</strong> Inlandsklimat
+                        <br>
+                        <strong>Georgien:</strong> Svarta havet
+                    </p>
+                </div>
             </div>
         </main>
         <!-- FOOTER -->
@@ -153,7 +123,7 @@
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-
+            
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");

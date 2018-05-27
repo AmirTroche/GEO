@@ -63,7 +63,6 @@
                 <div class="container marketing">
                     <h1 class="display-2">Södra Europa</h1>
                     <hr class="featurette-divider">
-<<<<<<< HEAD
                     <!-- Quiz funktionen slumpa och rätta -->
                     <form action="/count_result" method="post">
                         <!-- Python kod -->
@@ -76,7 +75,7 @@
                                 "wrong_answer_1",
                                 "wrong_answer_2"
                                 ]
-
+                                
                                 shuffle(answers)
                                 %>
                             <h2>{{ question['Country'] }}</h2>
@@ -86,78 +85,53 @@
                             % end
                         </div>
                         % end    
-                        <input type="submit" value="Resultat" class="btn btn-success button2">    
+                        <input type="submit" value="Resultat" class="btn btn-success result-button">    
                     </form>
                 </div>
-=======
-                    <!-- Python kod -->
-                    % for question in questions:
-                    <div class="quiz_div">
-                        <%
-                            # Python code! Shuffle the answers!
-                            answers = [
-                            "right_answer",
-                            "wrong_answer_1",
-                            "wrong_answer_2"
-                            ]
-
-                            shuffle(answers)
-                            %>
-                        <h2>{{ question['Country'] }}</h2>
-                        <p class="title">{{ question['Question'] }}</p>
-                        % for answer in answers:
-                        <label><input type="radio" value="{{ question[answer] }}" name="q,{{ question["QuestionID"] }}"  required >{{ question[answer] }}</label><br>
-                        % end
-                    </div>
-                    % end
-                    <input type="submit" value="Resultat" class="btn btn-success">
-                </form>
-            </div>
->>>>>>> c2e797f89311ce7820ff5b28b247fdf43a8604d3
                 <!--Länk till nästa quiz-sida-->
-                <p class="float-right next-quiz"><a href="east_quiz">Nästa quiz &raquo;</a></p>
-            <!--Collapse-funktion, Facit-->
-            <button class="btn btn-primary btn-lg collapsible">FACIT</button>
-            <div id="demo" class="collapse">
-                <p><strong>LAND.</strong> RÄTT SVAR
-                    <br>
-                    <strong>Spanien:</strong> Kanarieöarna
-                    <br>
-                    <strong>Portugal:</strong> Ett av kontinentens varmaste länder
-                    <br>
-                    <strong>Italien:</strong> Över 60 miljoner
-                    <br>
-                    <strong>Österrike:</strong> Fem
-                    <br>
-                    <strong>Slovenien:</strong> Europas trejde skogstätaste land
-                    <br>
-                    <strong>Ungern:</strong> Donau
-                    <br>
-                    <strong>Kroatien:</strong> Dinara
-                    <br>
-                    <strong>Bosnien och Hercegovina:</strong> Landets kustlinje är 24 km lång
-                    <br>
-                    <strong>Montenegro:</strong> Skodersjön
-                    <br>
-                    <strong>Albanien:</strong> Medelhavsklimat
-                    <br>
-                    <strong>Serbien:</strong> Serbiska
-                    <br>
-                    <strong>Grekland:</strong> Snö och is
-                    <br>
-                    <strong>Bulgarien:</strong> Sofia
-                    <br>
-                    <strong>Makedonien:</strong> Vardar
-                    <br>
-                    <strong>Turkiet:</strong> Inlandsklimat
-                    <br>
-                    <strong>Malta:</strong> Valletta
-                    <br>
-                    <strong>San Marino:</strong> San Marino
-                    <br>
-                    <strong>Vatikanstaden:</strong> Plats 49
-                </p>
-            </div>
+                <p class="float-right next-quiz"><a href="east_quiz">Östra quiz &raquo;</a></p>
+                <!--Collapse-funktion, Facit-->
+                <button class="btn btn-primary btn-lg collapsible">FACIT</button>
+                <div id="demo" class="collapse">
+                    <p><strong>LAND.</strong> RÄTT SVAR
+                        <br>
+                        <strong>Spanien:</strong> Kanarieöarna
+                        <br>
+                        <strong>Portugal:</strong> Ett av kontinentens varmaste länder
+                        <br>
+                        <strong>Italien:</strong> Över 60 miljoner
+                        <br>
+                        <strong>Österrike:</strong> Fem
+                        <br>
+                        <strong>Slovenien:</strong> Europas trejde skogstätaste land
+                        <br>
+                        <strong>Ungern:</strong> Donau
+                        <br>
+                        <strong>Kroatien:</strong> Dinara
+                        <br>
+                        <strong>Bosnien och Hercegovina:</strong> Landets kustlinje är 24 km lång
+                        <br>
+                        <strong>Montenegro:</strong> Skodersjön
+                        <br>
+                        <strong>Albanien:</strong> Medelhavsklimat
+                        <br>
+                        <strong>Serbien:</strong> Serbiska
+                        <br>
+                        <strong>Grekland:</strong> Snö och is
+                        <br>
+                        <strong>Bulgarien:</strong> Sofia
+                        <br>
+                        <strong>Makedonien:</strong> Vardar
+                        <br>
+                        <strong>Turkiet:</strong> Inlandsklimat
+                        <br>
+                        <strong>Malta:</strong> Valletta
+                        <br>
+                        <strong>San Marino:</strong> San Marino
+                        <br>
+                        <strong>Vatikanstaden:</strong> Plats 49
+                    </p>
+                </div>
             </div>
             <!--Container marketing-->
         </main>
@@ -171,7 +145,7 @@
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-
+            
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");
