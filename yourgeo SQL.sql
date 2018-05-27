@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Värd: 127.0.0.1
--- Tid vid skapande: 09 maj 2018 kl 11:09
+-- Tid vid skapande: 25 maj 2018 kl 10:33
 -- Serverversion: 10.1.31-MariaDB
 -- PHP-version: 7.2.3
 
@@ -43,7 +43,7 @@ INSERT INTO `answers` (`answersID`, `right_answer`, `wrong_answer_1`, `wrong_ans
 (1, 'Hekla', 'Etna', 'Katlan'),
 (2, '2500km', '2000km', '4000km'),
 (3, 'Kalksten', 'Koppar', 'Arsenik'),
-(4, 'Kemi älv', 'Vouksen', 'Torne älv'),
+(4, 'Kemi älv', 'Vouksen', 'Torneälv'),
 (5, '1:a plats', '2:a plats', '3:e plats'),
 (6, 'Jylland', 'Lolland', 'Møn'),
 (7, 'Tallinn ', 'Tartu', 'Narva'),
@@ -128,7 +128,7 @@ INSERT INTO `questions` (`QuestionID`, `Question`, `Area`, `Country`) VALUES
 (18, 'Vilket sorts statsskick har landet?', 'Västra Europa', 'Schweiz'),
 (19, 'På vilken plats hamnar landet innan i ytstorlek?', 'Västra Europa', 'Liechtenstein'),
 (20, 'Vad för terräng består landet främst av?', 'Västra Europa', 'Andorra'),
-(21, 'Vilken av följande finns faktiskt i landet?', 'Västra Europa', 'Monaco'),
+(21, 'Vilken av följande finns i landet?', 'Västra Europa', 'Monaco'),
 (22, 'En stor ögrupp ligger i Atlanten, vad heter gruppen?', 'Södra Europa', 'Spanien'),
 (23, 'Vad stämmer in på landet?', 'Södra Europa', 'Portugal'),
 (24, 'Hur många invånare hade ungefär landet 2016?', 'Södra Europa', 'Italien'),
@@ -148,7 +148,7 @@ INSERT INTO `questions` (`QuestionID`, `Question`, `Area`, `Country`) VALUES
 (38, 'Vad heter huvudstaden?', 'Södra Europa', 'San Marino'),
 (39, 'På vilken plats hamnar landet ytmässigt i Europa?', 'Södra Europa', 'Vatikanstaden'),
 (40, 'Vad är landets viktiga exportvara?', 'Östra Europa', 'Ukraina'),
-(41, 'Vad heter huvudstaden?', 'Östra Europa', 'Ukraina'),
+(41, 'Vad heter huvudstaden?', 'Östra Europa', 'Polen'),
 (42, 'Hur många invånare hade landet, ungefär, 2009?', 'Östra Europa', 'Slovakien'),
 (43, 'Vilken lång flod är landets längsta flod?', 'Östra Europa', 'Rumänien'),
 (44, 'Vilken av följande är inte en av landets storodlingsvaror?', 'Östra Europa', 'Moldavien'),
